@@ -1,0 +1,308 @@
+{
+  "source_project": "3d / CAD-SW-ANAYSIS / AiCad",
+  "source_repository": "https://github.com/qu347/CAD-SW-ANAYSIS",
+  "included_files": [
+    {
+      "source": "AiCad/.gitignore",
+      "destination": "plugin/.gitignore",
+      "source_sha256": "b49b34e9132e141e91b2fdf8b12295728c874ca3d4d5533219b8aa860cc1b097"
+    },
+    {
+      "source": "AiCad/AiCad.sln",
+      "destination": "plugin/AiCad.sln",
+      "source_sha256": "b039effa05842804471681e537ea7f520f32463860b2a2b0cc7a317d7fd933f9"
+    },
+    {
+      "source": "AiCad/deploy/AiCad.bundle/PackageContents.xml",
+      "destination": "plugin/deploy/AiCad.bundle/PackageContents.xml",
+      "source_sha256": "832a0d4841c00553fe0243e388b35daeb96d7ae5345c5c1b3697508796a88162"
+    },
+    {
+      "source": "AiCad/Directory.Build.props",
+      "destination": "plugin/Directory.Build.props",
+      "source_sha256": "31d3c530700fb7ad4f0c85a9a3ea1d2bff4e975aac7abc858b4ae7e957799513"
+    },
+    {
+      "source": "AiCad/Directory.Packages.props",
+      "destination": "plugin/Directory.Packages.props",
+      "source_sha256": "4839e956a1c8b4d302f936e7019f665402003003bcac38e62c8db6a91462974c"
+    },
+    {
+      "source": "AiCad/global.json",
+      "destination": "plugin/global.json",
+      "source_sha256": "84aa96f48aa20d14456121b5ac5f18967f29f7da504c6f886218c701687f47fa"
+    },
+    {
+      "source": "AiCad/README.md",
+      "destination": "plugin/README.md",
+      "source_sha256": "48304e67ca0ffeb0a2e2618b611df9658934b6bf2124f2a8e9f01c9d0184a172"
+    },
+    {
+      "source": "AiCad/scripts/build.ps1",
+      "destination": "plugin/scripts/build.ps1",
+      "source_sha256": "fcb7c62b52c92fba6e9fbb99055c8198fe8f0c1ae752edeeb43f42395e18f70c"
+    },
+    {
+      "source": "AiCad/scripts/codex-mcp.example.toml",
+      "destination": "plugin/scripts/codex-mcp.example.toml",
+      "source_sha256": "d2946217e14a231ad6451ff4d14e84aaefb24f5f5d2b5a1ba4b3dca771590927"
+    },
+    {
+      "source": "AiCad/scripts/install-user.ps1",
+      "destination": "plugin/scripts/install-user.ps1",
+      "source_sha256": "2b4206d395feee270f8ffce6efdc430941a47d48de8ee78ad5df138d86bc046e"
+    },
+    {
+      "source": "AiCad/scripts/uninstall-user.ps1",
+      "destination": "plugin/scripts/uninstall-user.ps1",
+      "source_sha256": "de010b4c74c797c3801d5fc66b45f851b965aabe358dcbc569fd18eff656aa84"
+    },
+    {
+      "source": "AiCad/scripts/verify-package.ps1",
+      "destination": "plugin/scripts/verify-package.ps1",
+      "source_sha256": "fd70c4e9b1123ec3bf072cb7611b9c35c7b48a14da3b201a7f22bf8685119483"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/AiCad.AutoCAD.csproj",
+      "destination": "plugin/src/AiCad.AutoCAD/AiCad.AutoCAD.csproj",
+      "source_sha256": "a7a241854594b5c8b49f859b053b41f96a047c8aada3c25bfa1e948a7cff43f8"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/ApprovalStore.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/ApprovalStore.cs",
+      "source_sha256": "587bfaee273812e3bd1c423745161e58d152c76d52c6c5972ce538bbe1dde68c"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/AutoCadContextReader.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/AutoCadContextReader.cs",
+      "source_sha256": "1bdedb3f1899377aa5de718fe41d6ce3b32c6b244778b88d3f513f75a1a48d42"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/AutoCadPlanExecutor.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/AutoCadPlanExecutor.cs",
+      "source_sha256": "656e1e7e71578ad5c1b7596799ced57e5b42d908955917509bb4eb2554b9a97a"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/BatchMetadataStore.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/BatchMetadataStore.cs",
+      "source_sha256": "96a21b8ea133723ecea631a024ed6860c9dbf40c087086497bdc0bddc2090541"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/CadRequestQueue.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/CadRequestQueue.cs",
+      "source_sha256": "081b9b03a2a0145474cbde282544d2ac17f5c68d465eb3354dd08cbf9b31ad14"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/Commands.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/Commands.cs",
+      "source_sha256": "475795f333a65759a7ccd9ec33420c4dfc61403f76627559388b9cc54c2d1578"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/DrawingEvidenceReader.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/DrawingEvidenceReader.cs",
+      "source_sha256": "c1449869aca5c8f4e89eae602c5f4575f6f7acc8aad5f02cf2b06672ac10e7d7"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/PipeServerHost.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/PipeServerHost.cs",
+      "source_sha256": "68edae082dcb8129fc7b1869d7d280109fb06bfe80cb1a8a8f9434f81e415c4a"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/PluginEntry.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/PluginEntry.cs",
+      "source_sha256": "7a449e425a8317cb0886ede3cf30f3b1e640f151d4627a2497289dde818f7151"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/RoundedPlate2dWriter.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/RoundedPlate2dWriter.cs",
+      "source_sha256": "d410892641796974d05ee1d74a5820516b7c5a0dea77ec63e0363d3d48b73c68"
+    },
+    {
+      "source": "AiCad/src/AiCad.AutoCAD/RoundedPlate3dWriter.cs",
+      "destination": "plugin/src/AiCad.AutoCAD/RoundedPlate3dWriter.cs",
+      "source_sha256": "87df79a167fe57f2e70f55e14613f790712dd1a0f9a3aff322b327ecfbc44363"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/AiCad.Bridge.csproj",
+      "destination": "plugin/src/AiCad.Bridge/AiCad.Bridge.csproj",
+      "source_sha256": "c0e79317c7d1193ac63dbe6a246753031ef16c16e1de054f76bc0e76885780ed"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/BridgeOptions.cs",
+      "destination": "plugin/src/AiCad.Bridge/BridgeOptions.cs",
+      "source_sha256": "029df2c8c4e47e3ec681741b6171bc3e3ee091250f934123428041e998fa038a"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/CadTools.cs",
+      "destination": "plugin/src/AiCad.Bridge/CadTools.cs",
+      "source_sha256": "7759a02f0431fd1614737f9754b2b5211ae893662390069e2523db26fa305e43"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/PipeCadClient.cs",
+      "destination": "plugin/src/AiCad.Bridge/PipeCadClient.cs",
+      "source_sha256": "c2127a1ec3c1992d431149fc023bbfceee9ef3cadc48206b8eec971b4408688b"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/Program.cs",
+      "destination": "plugin/src/AiCad.Bridge/Program.cs",
+      "source_sha256": "6c1a0e069e4474a96c27a4706541eaab4c8b466a50cc1d7a33c8d00be4ac8c4b"
+    },
+    {
+      "source": "AiCad/src/AiCad.Bridge/SessionDiscovery.cs",
+      "destination": "plugin/src/AiCad.Bridge/SessionDiscovery.cs",
+      "source_sha256": "fde9b45d6c44dc5c7faee4e373d8c114111f9db782f5e050cbeb12dc3c2f6588"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/AiCad.Contracts.csproj",
+      "destination": "plugin/src/AiCad.Contracts/AiCad.Contracts.csproj",
+      "source_sha256": "e44c6aa5d69d0526c6b7961331a2020122c313ee9ea087d1daa3f4e7cab34bad"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/CadContext.cs",
+      "destination": "plugin/src/AiCad.Contracts/CadContext.cs",
+      "source_sha256": "a16b490d0d926f21b50ab24b356b45ce176e7af500479e913c93016e0bce7273"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/CadRpc.cs",
+      "destination": "plugin/src/AiCad.Contracts/CadRpc.cs",
+      "source_sha256": "235abec6c7d4411bd097e977e3085514fdc748f6ab42c97245e11f8f2c16b979"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/DrawingEvidence.cs",
+      "destination": "plugin/src/AiCad.Contracts/DrawingEvidence.cs",
+      "source_sha256": "b73ed91a590e82b69cd423e7903beb737520015f38009c89e1efca56467c240e"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/DrawingPlan.cs",
+      "destination": "plugin/src/AiCad.Contracts/DrawingPlan.cs",
+      "source_sha256": "5a7c583678b9bb9b67df378f0af2ad41f8ad568ca10179a4764667c4c4e9cea2"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/OperationPolicy.cs",
+      "destination": "plugin/src/AiCad.Contracts/OperationPolicy.cs",
+      "source_sha256": "9821050b754206cb7031f5de5568118ca665b582406e390adebc364fa4acb381"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/PlanJson.cs",
+      "destination": "plugin/src/AiCad.Contracts/PlanJson.cs",
+      "source_sha256": "f75699b50c5415feea1cef913e8dc82a3761e8957c5ea1567aadad8e6cf9ab25"
+    },
+    {
+      "source": "AiCad/src/AiCad.Contracts/PlanValidator.cs",
+      "destination": "plugin/src/AiCad.Contracts/PlanValidator.cs",
+      "source_sha256": "6826c562c079eaa5c0aee276b3b56af31faa87e0bb2dc44cf64fa147a4de553e"
+    },
+    {
+      "source": "AiCad/src/AiCad.Mechanical/AiCad.Mechanical.csproj",
+      "destination": "plugin/src/AiCad.Mechanical/AiCad.Mechanical.csproj",
+      "source_sha256": "294ebefa10fe5e3a23338ed2247eca2e92d757e814e5033b213600009a1175ad"
+    },
+    {
+      "source": "AiCad/src/AiCad.Mechanical/RoundedPlatePlanFactory.cs",
+      "destination": "plugin/src/AiCad.Mechanical/RoundedPlatePlanFactory.cs",
+      "source_sha256": "6f599219187cfd84a473d6ea08197a773a8a49635a3343c658dad0260f30902f"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Bridge.Tests/AiCad.Bridge.Tests.csproj",
+      "destination": "plugin/tests/AiCad.Bridge.Tests/AiCad.Bridge.Tests.csproj",
+      "source_sha256": "eff185df38b2f5965250adf941a5c55de9d545be2e3c14f8da19df415ff72a42"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Bridge.Tests/CadToolsTests.cs",
+      "destination": "plugin/tests/AiCad.Bridge.Tests/CadToolsTests.cs",
+      "source_sha256": "19e3eafe43233251f65a89be87aceab0a7ea0559cf641474cc9663b8f69adf8f"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Bridge.Tests/DrawingEvidenceToolsTests.cs",
+      "destination": "plugin/tests/AiCad.Bridge.Tests/DrawingEvidenceToolsTests.cs",
+      "source_sha256": "9234f6e64cda3abc7da5e46f22ef8a8a9d519b0a51c9a1574f78b775d10392b4"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Bridge.Tests/PipeCadClientTests.cs",
+      "destination": "plugin/tests/AiCad.Bridge.Tests/PipeCadClientTests.cs",
+      "source_sha256": "23961ddc227e3a802ffeda81bde8470f318598b4c606393537310d3ebef034e3"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Bridge.Tests/SessionDiscoveryTests.cs",
+      "destination": "plugin/tests/AiCad.Bridge.Tests/SessionDiscoveryTests.cs",
+      "source_sha256": "017b3534962d53d3bc08639a268ddd35ffb81f229b2deb81835c7350cd506882"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/AiCad.Contracts.Tests.csproj",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/AiCad.Contracts.Tests.csproj",
+      "source_sha256": "466e8eca8fa85e44ed0c5b0becdd76c1612306a8a35393e00f7ec239c69ed37e"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/CadContextTests.cs",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/CadContextTests.cs",
+      "source_sha256": "fa7bec088b334b7d1bd03673ae159256885d1d8118fade8ed23254435d8fbf0c"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/OperationPolicyTests.cs",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/OperationPolicyTests.cs",
+      "source_sha256": "1d623191a010afabf40e2d60fa83aa6cbbb9441a46221ea2c96a9ce5476d1026"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/PlanJsonTests.cs",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/PlanJsonTests.cs",
+      "source_sha256": "6afaf479709f0a068dc09ec0c7bb46815d8cc46968cfb2de072752bd95b1ba91"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/PlanSamples.cs",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/PlanSamples.cs",
+      "source_sha256": "39a816f07c990aafde1d07bd306c7227cb6061727056cda6c1d7b1b6797487ac"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Contracts.Tests/PlanValidatorTests.cs",
+      "destination": "plugin/tests/AiCad.Contracts.Tests/PlanValidatorTests.cs",
+      "source_sha256": "4ba2665f811780d30e6225bec24b79e98524f7224ba0e1953201b17cf72696c6"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Mechanical.Tests/AiCad.Mechanical.Tests.csproj",
+      "destination": "plugin/tests/AiCad.Mechanical.Tests/AiCad.Mechanical.Tests.csproj",
+      "source_sha256": "6b5c1dd8bba3c8e57eab888316c058d18dd3ffcc55f6468894dec161262cdf37"
+    },
+    {
+      "source": "AiCad/tests/AiCad.Mechanical.Tests/RoundedPlatePlanFactoryTests.cs",
+      "destination": "plugin/tests/AiCad.Mechanical.Tests/RoundedPlatePlanFactoryTests.cs",
+      "source_sha256": "e8c1ea7d7432ba5035427f6d198fd334350e6403dab9d618a1dec4ebeb3e46a3"
+    },
+    {
+      "source": "AiCad/tests/AutoCAD.Integration/README.md",
+      "destination": "plugin/tests/AutoCAD.Integration/README.md",
+      "source_sha256": "b8e5037d94a2920c7a597ebd03835b2bb52ca9ff4faac28d78361842f6198fb4"
+    },
+    {
+      "source": "AiCad/tests/AutoCAD.Integration/rounded-plate.scr",
+      "destination": "plugin/tests/AutoCAD.Integration/rounded-plate.scr",
+      "source_sha256": "3aaa29dca19721b534d0f6d5ac0c74663b605c93fdc57daec298e39ab7d9efd4"
+    },
+    {
+      "source": "AiCad/tests/AutoCAD.Integration/run-core-console.ps1",
+      "destination": "plugin/tests/AutoCAD.Integration/run-core-console.ps1",
+      "source_sha256": "70b6edd885b2849fa7df5c51f529073f23854e7b5575ff2500bb0945720f1776"
+    },
+    {
+      "source": "AiCad/tests/AutoCAD.Integration/run-pipe.ps1",
+      "destination": "plugin/tests/AutoCAD.Integration/run-pipe.ps1",
+      "source_sha256": "cdcccbaf4ab560338f0a2874b75bf0a2df88b1db09fa64e83d740d13a0ce76b8"
+    },
+    {
+      "source": "AiCad/tests/AutoCAD.Integration/run-status.ps1",
+      "destination": "plugin/tests/AutoCAD.Integration/run-status.ps1",
+      "source_sha256": "b15c05c4f8ab8a184925404138f71d18a0b4d90fbe592d0a1bf4f5055bf98d41"
+    }
+  ],
+  "excluded": [
+    "SOLIDWORKS and ANSYS projects",
+    "Autodesk SDK binaries and build outputs",
+    "local machine configurations and environment files",
+    "private drawing evidence fixtures and development plans"
+  ],
+  "adaptations": [
+    "AutoCAD installation directory configurable via AUTOCAD_PATH",
+    "select an installed .NET 8 SDK",
+    "integration tests restore TRUSTEDPATHS instead of disabling SECURELOAD",
+    "add stepped-flange teaching example and Codex entry instructions"
+  ]
+}

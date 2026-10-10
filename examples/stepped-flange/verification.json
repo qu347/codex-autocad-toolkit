@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "native_execution": "AutoCAD 2026 Core Console, AutoLISP",
+  "unit": "mm",
+  "scale": "1:1",
+  "drawing_format": "AutoCAD 2018 DWG",
+  "outline": {
+    "bounds": [
+      0,
+      0,
+      220,
+      160
+    ],
+    "closed": true,
+    "R8_fillets": 20,
+    "mirror_symmetry": true
+  },
+  "actual_holes": 11,
+  "slots": 2,
+  "native_dimensions": 25,
+  "diameter_dimension_measurements": [
+    9.0,
+    10.0,
+    60.0,
+    90.0
+  ],
+  "minimum_circle_to_outline_clearance_mm": 15.5,
+  "minimum_circle_to_circle_clearance_mm": 10.0,
+  "minimum_circle_to_slot_clearance_mm": 20.0,
+  "slot_to_outline_containment": "Boundary sampled at 0.002 mm chord tolerance.",
+  "dxf_audit_errors": 0,
+  "dxf_audit_fixes": 0,
+  "dwg_saved_reopened_and_geometry_compared": true,
+  "repeated_commands_add_no_duplicate_objects": true,
+  "entity_types": {
+    "LWPOLYLINE": 3,
+    "CIRCLE": 12,
+    "LINE": 26,
+    "DIMENSION": 25,
+    "TEXT": 4
+  },
+  "layer_entities": {
+    "OUTLINE": 1,
+    "HOLE": 13,
+    "CENTER": 27,
+    "DIM": 25,
+    "TEXT": 4
+  },
+  "limitations": [
+    "2D teaching exercise; no material, thickness, tolerance or manufacturing approval.",
+    "Change parameters and regenerate in a new empty drawing; existing geometry is not parametrically linked.",
+    "Preview rendered from AutoCAD-exported DXF; desktop GUI APPLOAD clicking was not tested."
+  ]
+}

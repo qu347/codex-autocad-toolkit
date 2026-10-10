@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <AutoCADInstallDir Condition="'$(AutoCADInstallDir)' == ''">$(AUTOCAD_PATH)</AutoCADInstallDir>
+    <AutoCADInstallDir Condition="'$(AutoCADInstallDir)' == ''">C:\Program Files\Autodesk\AutoCAD 2026</AutoCADInstallDir>
+  </PropertyGroup>
+</Project>

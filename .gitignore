@@ -1,0 +1,14 @@
+**/bin/
+**/obj/
+**/TestResults/
+plugin/deploy/AiCad.bundle/Contents/
+.env
+.env.*
+*.user
+*.suo
+__pycache__/
+.venv/
+*.log
+*.bak
+*.dwl
+*.dwl2

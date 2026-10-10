@@ -1,0 +1,6 @@
+.worktrees/
+[Bb]in/
+[Oo]bj/
+TestResults/
+deploy/AiCad.bundle/Contents/
+*.user

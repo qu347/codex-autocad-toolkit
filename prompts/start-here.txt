@@ -1,5 +1,6 @@
 请读取本仓库的 AGENTS.md、README.md、skills/codex-autocad-toolkit/SKILL.md 和 docs/getting-started.md。
-先检查我的 Windows、AutoCAD 版本、安装路径及当前可用的 MCP 工具，报告实际检查结果。
-如果只演示阶梯法兰，优先使用 examples/stepped-flange 中的 AutoLISP 脚本，在新空白图纸中分阶段绘制并校核。
+这次先走 AutoLISP 路线，检查我的 Windows、实际 AutoCAD 版本和安装路径，报告实际检查结果；创建 practice/ready.txt，写入已确认的版本和本课单位 mm，返回实际文件路径。
+收到完整绘图提示词后，请直接创建本次 AutoLISP，在新的 AutoCAD 空白图纸中自动分阶段绘制、缩放显示、导出预览、保存新 DWG 和 DXF，并用原生引擎重开校核。不要让我手动 APPLOAD 或输入绘图命令，不使用 Computer Use，不安装 MCP 插件。
+阶梯法兰参考 examples/stepped-flange/flange_demo.lsp，本次新脚本放在 practice/flange_demo.lsp；保留参考脚本和原图，按本次提示词重新试跑。发现尺寸冲突时指出具体位置，不自行改尺寸。
 如果我选择 MCP 插件接入，再按文档构建安装，配置 Bridge，并实际验证 cad_health 与 cad_get_context。
 不要覆盖我已有的全局配置或图纸；提供需要合并的配置项及具体文件位置。

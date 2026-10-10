@@ -1,0 +1,947 @@
+{
+  "date": "2026-10-10",
+  "environment": {
+    "windows": "Windows 10 Pro 64-bit 10.0.19045",
+    "autocad": "AutoCAD 2026 R25.1.60.0.0"
+  },
+  "default": {
+    "desktop_receipt": "ACADVER=25.1s (LMS Tech)\nSTAGE1=OK\nSTAGE2=OK\nSTAGE3=OK\nREPEAT=SKIPPED\nSAVED=OK\n",
+    "lsp": "practice/flange_demo.lsp",
+    "lsp_sha256": "0e0445e3f051ddbf28851e066feb954d04226f8dafe33c36d221fdd20c5eb147",
+    "dwg": "practice/flange_auto.dwg",
+    "dxf": "practice/flange_auto.dxf",
+    "actual_drawing": {
+      "model_entities": 70,
+      "layers": {
+        "OUTLINE": 1,
+        "HOLE": 13,
+        "CENTER": 27,
+        "DIM": 25,
+        "TEXT": 4
+      },
+      "closed_outline": true,
+      "actual_circular_holes": 11,
+      "closed_slots": 2,
+      "auxiliary_pitch_circles": 1,
+      "native_dimensions": 25,
+      "units": "mm",
+      "world_ucs": true,
+      "all_model_geometry_z": 0,
+      "outline_bounds": [
+        0.0,
+        0.0,
+        220.0,
+        160.0
+      ],
+      "fillet_count": 20,
+      "fillet_radius": 8.0,
+      "circles": [
+        {
+          "layer": "HOLE",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 60.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            155.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            132.5,
+            118.9711431703,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            87.5,
+            118.9711431703,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            65.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            87.5,
+            41.0288568297,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            132.5,
+            41.0288568297,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "CENTER",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 90.0
+        }
+      ],
+      "slots": [
+        [
+          [
+            16.0,
+            74.0,
+            0.0
+          ],
+          [
+            34.0,
+            74.0,
+            1.0
+          ],
+          [
+            34.0,
+            86.0,
+            0.0
+          ],
+          [
+            16.0,
+            86.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            186.0,
+            74.0,
+            0.0
+          ],
+          [
+            204.0,
+            74.0,
+            1.0
+          ],
+          [
+            204.0,
+            86.0,
+            0.0
+          ],
+          [
+            186.0,
+            86.0,
+            1.0
+          ]
+        ]
+      ],
+      "dimension_measurements": [
+        220.0,
+        160.0,
+        25.0,
+        30.0,
+        110.0,
+        30.0,
+        25.0,
+        20.0,
+        30.0,
+        60.0,
+        30.0,
+        20.0,
+        45.0,
+        130.0,
+        40.0,
+        80.0,
+        25.0,
+        80.0,
+        30.0,
+        12.0,
+        60.0,
+        90.0,
+        10.0,
+        9.0,
+        8.0
+      ]
+    },
+    "native_dwg_reopen": {
+      "model_entities": 70,
+      "layers": {
+        "OUTLINE": 1,
+        "HOLE": 13,
+        "CENTER": 27,
+        "DIM": 25,
+        "TEXT": 4
+      },
+      "closed_outline": true,
+      "actual_circular_holes": 11,
+      "closed_slots": 2,
+      "auxiliary_pitch_circles": 1,
+      "native_dimensions": 25,
+      "units": "mm",
+      "world_ucs": true,
+      "all_model_geometry_z": 0,
+      "outline_bounds": [
+        0.0,
+        0.0,
+        220.0,
+        160.0
+      ],
+      "fillet_count": 20,
+      "fillet_radius": 8.0,
+      "circles": [
+        {
+          "layer": "HOLE",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 60.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            155.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            132.5,
+            118.9711431703,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            87.5,
+            118.9711431703,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            65.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            87.5,
+            41.0288568297,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            132.5,
+            41.0288568297,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "CENTER",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 90.0
+        }
+      ],
+      "slots": [
+        [
+          [
+            16.0,
+            74.0,
+            0.0
+          ],
+          [
+            34.0,
+            74.0,
+            1.0
+          ],
+          [
+            34.0,
+            86.0,
+            0.0
+          ],
+          [
+            16.0,
+            86.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            186.0,
+            74.0,
+            0.0
+          ],
+          [
+            204.0,
+            74.0,
+            1.0
+          ],
+          [
+            204.0,
+            86.0,
+            0.0
+          ],
+          [
+            186.0,
+            86.0,
+            1.0
+          ]
+        ]
+      ],
+      "dimension_measurements": [
+        220.0,
+        160.0,
+        25.0,
+        30.0,
+        110.0,
+        30.0,
+        25.0,
+        20.0,
+        30.0,
+        60.0,
+        30.0,
+        20.0,
+        45.0,
+        130.0,
+        40.0,
+        80.0,
+        25.0,
+        80.0,
+        30.0,
+        12.0,
+        60.0,
+        90.0,
+        10.0,
+        9.0,
+        8.0
+      ]
+    },
+    "computer_use": false,
+    "mcp_installation": false,
+    "prompt_geometry_checked": true,
+    "theoretical_corners": [
+      [
+        0,
+        50
+      ],
+      [
+        25,
+        50
+      ],
+      [
+        25,
+        20
+      ],
+      [
+        55,
+        20
+      ],
+      [
+        55,
+        0
+      ],
+      [
+        165,
+        0
+      ],
+      [
+        165,
+        20
+      ],
+      [
+        195,
+        20
+      ],
+      [
+        195,
+        50
+      ],
+      [
+        220,
+        50
+      ],
+      [
+        220,
+        110
+      ],
+      [
+        195,
+        110
+      ],
+      [
+        195,
+        140
+      ],
+      [
+        165,
+        140
+      ],
+      [
+        165,
+        160
+      ],
+      [
+        55,
+        160
+      ],
+      [
+        55,
+        140
+      ],
+      [
+        25,
+        140
+      ],
+      [
+        25,
+        110
+      ],
+      [
+        0,
+        110
+      ]
+    ],
+    "native_audit_errors": 0,
+    "existing_output_refused_and_unchanged": true
+  },
+  "bore50_pcd100": {
+    "desktop_receipt": "ACADVER=25.1s (LMS Tech)\nSTAGE1=OK\nSTAGE2=OK\nSTAGE3=OK\nREPEAT=SKIPPED\nSAVED=OK\n",
+    "lsp": "practice/flange_practice.lsp",
+    "lsp_sha256": "8a98c1187aacb5273e7496cb37c32b9d3d62176265f6b3270d6064114d060a3d",
+    "dwg": "practice/flange_bore50_pcd100.dwg",
+    "dxf": "practice/flange_bore50_pcd100.dxf",
+    "actual_drawing": {
+      "model_entities": 70,
+      "layers": {
+        "OUTLINE": 1,
+        "HOLE": 13,
+        "CENTER": 27,
+        "DIM": 25,
+        "TEXT": 4
+      },
+      "closed_outline": true,
+      "actual_circular_holes": 11,
+      "closed_slots": 2,
+      "auxiliary_pitch_circles": 1,
+      "native_dimensions": 25,
+      "units": "mm",
+      "world_ucs": true,
+      "all_model_geometry_z": 0,
+      "outline_bounds": [
+        0.0,
+        0.0,
+        220.0,
+        160.0
+      ],
+      "fillet_count": 20,
+      "fillet_radius": 8.0,
+      "circles": [
+        {
+          "layer": "HOLE",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 50.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            160.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            135.0,
+            123.301270189222,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            85.0,
+            123.301270189222,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            60.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            85.0,
+            36.698729810778,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            135.0,
+            36.698729810778,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "CENTER",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 100.0
+        }
+      ],
+      "slots": [
+        [
+          [
+            16.0,
+            74.0,
+            0.0
+          ],
+          [
+            34.0,
+            74.0,
+            1.0
+          ],
+          [
+            34.0,
+            86.0,
+            0.0
+          ],
+          [
+            16.0,
+            86.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            186.0,
+            74.0,
+            0.0
+          ],
+          [
+            204.0,
+            74.0,
+            1.0
+          ],
+          [
+            204.0,
+            86.0,
+            0.0
+          ],
+          [
+            186.0,
+            86.0,
+            1.0
+          ]
+        ]
+      ],
+      "dimension_measurements": [
+        220.0,
+        160.0,
+        25.0,
+        30.0,
+        110.0,
+        30.0,
+        25.0,
+        20.0,
+        30.0,
+        60.0,
+        30.0,
+        20.0,
+        45.0,
+        130.0,
+        40.0,
+        80.0,
+        25.0,
+        80.0,
+        30.0,
+        12.0,
+        50.0,
+        100.0,
+        10.0,
+        9.0,
+        8.0
+      ]
+    },
+    "native_dwg_reopen": {
+      "model_entities": 70,
+      "layers": {
+        "OUTLINE": 1,
+        "HOLE": 13,
+        "CENTER": 27,
+        "DIM": 25,
+        "TEXT": 4
+      },
+      "closed_outline": true,
+      "actual_circular_holes": 11,
+      "closed_slots": 2,
+      "auxiliary_pitch_circles": 1,
+      "native_dimensions": 25,
+      "units": "mm",
+      "world_ucs": true,
+      "all_model_geometry_z": 0,
+      "outline_bounds": [
+        0.0,
+        0.0,
+        220.0,
+        160.0
+      ],
+      "fillet_count": 20,
+      "fillet_radius": 8.0,
+      "circles": [
+        {
+          "layer": "HOLE",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 50.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            160.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            135.0,
+            123.301270189222,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            85.0,
+            123.301270189222,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            60.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            85.0,
+            36.698729810778,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            135.0,
+            36.698729810778,
+            0.0
+          ],
+          "diameter": 10.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            40.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            45.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "HOLE",
+          "center": [
+            175.0,
+            120.0,
+            0.0
+          ],
+          "diameter": 9.0
+        },
+        {
+          "layer": "CENTER",
+          "center": [
+            110.0,
+            80.0,
+            0.0
+          ],
+          "diameter": 100.0
+        }
+      ],
+      "slots": [
+        [
+          [
+            16.0,
+            74.0,
+            0.0
+          ],
+          [
+            34.0,
+            74.0,
+            1.0
+          ],
+          [
+            34.0,
+            86.0,
+            0.0
+          ],
+          [
+            16.0,
+            86.0,
+            1.0
+          ]
+        ],
+        [
+          [
+            186.0,
+            74.0,
+            0.0
+          ],
+          [
+            204.0,
+            74.0,
+            1.0
+          ],
+          [
+            204.0,
+            86.0,
+            0.0
+          ],
+          [
+            186.0,
+            86.0,
+            1.0
+          ]
+        ]
+      ],
+      "dimension_measurements": [
+        220.0,
+        160.0,
+        25.0,
+        30.0,
+        110.0,
+        30.0,
+        25.0,
+        20.0,
+        30.0,
+        60.0,
+        30.0,
+        20.0,
+        45.0,
+        130.0,
+        40.0,
+        80.0,
+        25.0,
+        80.0,
+        30.0,
+        12.0,
+        50.0,
+        100.0,
+        10.0,
+        9.0,
+        8.0
+      ]
+    },
+    "computer_use": false,
+    "mcp_installation": false,
+    "native_audit_errors": 0
+  }
+}

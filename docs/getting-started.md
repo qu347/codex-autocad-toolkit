@@ -9,12 +9,16 @@ cd codex-autocad-toolkit
 
 没有 Git 时用仓库页面 Code → Download ZIP，完整解压到独立文件夹。在 Codex 中打开此文件夹，提交 `prompts/start-here.txt` 的内容。
 
-## 先跑二维教学案例
+## 让 Codex 直接绘制二维教学案例
 
 需要 Windows AutoCAD。默认案例已在 AutoCAD 2026 验证。
-打开新空白图纸，在命令行运行 APPLOAD，加载 `examples/stepped-flange/flange_demo.lsp`。
-依次运行 CADOUTLINE、CADHOLES、CADDIMS，检查结果再另存为自己的 DWG。
-参考图和默认参数验证结果位于同一目录。此路线不依赖 MCP 插件或 .NET SDK。
+在 Codex 打开本仓库，提交 `prompts/start-here.txt`，再提交 [自动绘图课程](autolisp-auto-drawing.md) 中的完整绘图提示词。由 Codex 确认实际环境、检查尺寸、创建 `practice/flange_demo.lsp`，然后直接在 AutoCAD 新空白图纸中自动执行轮廓、孔槽与尺寸三个阶段。你不需要手动 APPLOAD 或输入阶段命令。
+
+每个阶段完成后自动 REGEN、ZOOM，停留3秒并导出原生预览。校核完成后保存为新的 DWG、DXF，并用 AutoCAD 原生引擎重开检查。出现尺寸冲突或阶段失败时停止，不改变指定尺寸、不覆盖原图。参考图保留在 `examples/stepped-flange/`，本次已生成结果见 `practice/`。
+
+此路线使用 AutoCAD 原生 AutoLISP 和 `/b` 脚本入口，不使用 Computer Use，不依赖 MCP 插件或 .NET SDK。自动执行器 `skills/codex-autocad-toolkit/scripts/run-visible-lisp.py` 需要 Python 3、ezdxf、Pillow；由 Codex 检查现有运行环境和实际 acad.exe、acadiso.dwt 路径。该执行器只负责本例的三个阶段，其他形状需要根据尺寸另写脚本和校核。
+
+只有明确选择手动教学时，才用 APPLOAD 加载参考脚本并依次手动运行 CADOUTLINE、CADHOLES、CADDIMS。
 
 ## 接入 MCP 插件
 

@@ -1,22 +1,24 @@
 # Codex AutoCAD 绘图工具包
 
-Codex + AutoCAD 2026 绘图工具包。包含 MCP 插件源码、安装与连接说明、测试，以及阶梯法兰安装板教学案例。
+Codex + AutoCAD 2026 绘图工具包。二维 AutoLISP 路线由 Codex 根据完整尺寸提示词直接驱动 AutoCAD，自动分阶段显示、保存与校核。另含 MCP 插件源码、接入说明及测试。
 
 ![阶梯法兰教学案例](examples/stepped-flange/preview.png)
 
 ## 先选一个入口
 
-- **二维案例演示**：用 AutoLISP 分阶段完成轮廓、孔槽与25个原生尺寸。打开参考 DWG，在新空白图纸中运行案例脚本。不需要先安装 .NET 或 MCP。
+- **提示词直接绘图**：在 Codex 打开本项目，提交完整尺寸要求。Codex 创建本次 AutoLISP，在 AutoCAD 新图纸中自动完成轮廓、孔槽与25个原生尺寸，每阶段缩放、停留并导出预览，最后保存和重开校核。无需手动 APPLOAD、输入绘图命令或使用 Computer Use；此路线不安装 MCP 插件或 .NET SDK。
 - **Codex 直连 AutoCAD**：构建并安装 AI-CAD 插件，连接 MCP Bridge，创建圆角矩形四孔底板、三维实体和二维三视图，并读取图纸证据。
 
 插件直接支持的几何模板是圆角矩形四孔底板；阶梯法兰采用独立 AutoLISP 脚本。复杂需求需要明确尺寸、选择适合的路线并复核结果。
+
+直接绘图教程见 [AutoLISP 自动绘图课程](docs/autolisp-auto-drawing.md) 或 [Word 课程稿](docs/autolisp-auto-drawing.docx)。本次实际生成的 [DWG](practice/flange_auto.dwg)、[DXF](practice/flange_auto.dxf)、[分阶段预览](practice/README.md) 和 [校核记录](practice/verification.json) 位于 practice，原参考脚本和图纸保留在 examples。
 
 ## 下载与接入
 
 1. Code → Download ZIP 并完整解压，或 git clone 此仓库。
 2. 在 Codex 打开工具包文件夹，将 `prompts/start-here.txt` 发给 Codex。
 3. 按 [接入说明](docs/getting-started.md) 选择案例脚本或 MCP 路线。
-4. 检查实际连接和图形，保存自己生成的文件。
+4. 提交绘图提示词，让 Codex 自动执行；查看返回的实际图纸、阶段预览与校核结果。
 
 ## 文件
 

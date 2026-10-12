@@ -2,10 +2,11 @@ using System.ComponentModel;
 using AiCad.Contracts;
 using AiCad.Mechanical;
 using ModelContextProtocol.Server;
+using ModelContextProtocol;
 
 namespace AiCad.Bridge;
 
-public sealed class CadToolException : Exception
+public sealed class CadToolException : McpException
 {
     public CadToolException(string code, string message, Exception? innerException = null)
         : base(message, innerException)

@@ -1,36 +1,45 @@
 # Codex AutoCAD 绘图工具包
 
-Codex + AutoCAD 2026 绘图工具包。包含 MCP 插件源码、安装与连接说明、测试，以及阶梯法兰安装板教学案例。
+让 Codex 通过本机 MCP 调用 AutoCAD 2026，按尺寸分阶段绘制轮廓、孔槽、中心线和原生标注。1.1.0 新增结构化二维接口，并附两套 Skills、复杂阶梯法兰图纸和教学演示材料。
 
-![阶梯法兰教学案例](examples/stepped-flange/preview.png)
+![实际 MCP 生成的阶梯法兰](examples/mcp-stepped-flange/preview.png)
 
-## 先选一个入口
+## 直接开始
 
-- **二维案例演示**：用 AutoLISP 分阶段完成轮廓、孔槽与25个原生尺寸。打开参考 DWG，在新空白图纸中运行案例脚本。不需要先安装 .NET 或 MCP。
-- **Codex 直连 AutoCAD**：构建并安装 AI-CAD 插件，连接 MCP Bridge，创建圆角矩形四孔底板、三维实体和二维三视图，并读取图纸证据。
+1. 解压包含编译文件的教学安装包，运行 `plugin/scripts/install-package.ps1` 和 `install-skills.ps1`。
+2. 启动 AutoCAD 2026，新建公制空白图纸，执行 AICADSTATUS。
+3. 在 Codex 添加/刷新 `ai_cad` STDIO 服务，调用 health/context 确认连接。
+4. 使用 [三阶段演示提示词](examples/mcp-stepped-flange/prompts.txt) 绘图，并按 [教学脚本](docs/teaching-demo.md) 录屏。
 
-插件直接支持的几何模板是圆角矩形四孔底板；阶梯法兰采用独立 AutoLISP 脚本。复杂需求需要明确尺寸、选择适合的路线并复核结果。
+详细步骤见 [安装与连接](docs/getting-started.md)。Git 仓库源码不包含发布二进制；从源码使用需先运行 `build.ps1` 或 `install-user.ps1`。
 
-## 下载与接入
+## MCP 与 Skills
 
-1. Code → Download ZIP 并完整解压，或 git clone 此仓库。
-2. 在 Codex 打开工具包文件夹，将 `prompts/start-here.txt` 发给 Codex。
-3. 按 [接入说明](docs/getting-started.md) 选择案例脚本或 MCP 路线。
-4. 检查实际连接和图形，保存自己生成的文件。
+| 接口/技能 | 作用 |
+|---|---|
+| cad_draw_2d | 一个阶段创建直线、圆、圆弧、带 bulge 的多段线及四类原生尺寸 |
+| cad_get_layers / cad_get_geometry | 读取实际图层和几何，每次最多20个句柄 |
+| cad_save_drawing | 输出新的 DWG/DXF 副本，返回实际路径与文件大小 |
+| $autocad-mcp-drawing | 检查连接、确定尺寸、拆分阶段、构建计划和处理重试 |
+| $autocad-mcp-review | 检查真实孔槽、圆角和尺寸，整理教学演示证据 |
+
+共17个工具，保留原有四孔底板三维/三视图、提议修改、撤销及分页读取。通用二维接口支持 [2d-1.0 字段契约](skills/autocad-mcp-drawing/references/plan-schema.md)，不开放任意代码执行。重复请求返回原句柄，保存不覆盖现有文件。
 
 ## 文件
 
 | 目录 | 用途 |
 |---|---|
 | plugin/ | AutoCAD .NET 插件、MCP Bridge、安装脚本与测试 |
-| examples/stepped-flange/ | LSP、提示词、DWG、DXF、预览与默认参数校核结果 |
-| skills/codex-autocad-toolkit/ | 与本仓库配套使用的 Codex Skill 指引 |
+| examples/mcp-stepped-flange/ | 新 MCP 的三阶段 JSON、提示词、实际 DWG/DXF、预览和验证证据 |
+| skills/autocad-mcp-*/ | 配套绘图与复核技能，可安装到 Codex |
+| examples/stepped-flange/ | 保留的独立 AutoLISP 演示路线 |
+| skills/codex-autocad-toolkit/ | 仓库入口指引 |
 | prompts/ | 首次开工提示词 |
 | docs/ | 接入和验证说明 |
 
 ## 环境与验证
 
-MCP 路线需要 Windows、AutoCAD 2026 和 .NET 8 SDK。软件和授权由使用者自行准备，仓库不分发 Autodesk SDK 或安装程序。
-实际执行记录见 [验证说明](docs/verification.md)。本工具包不承诺任意零件的一句话生成或制造验收。
+运行编译包需要 Windows、AutoCAD 2026 和 .NET 8 x64 Runtime；源码构建需要 .NET 8 SDK。仓库不分发 Autodesk SDK 或软件安装程序。
+113项单元测试通过，真实 MCP → 命名管道 → AutoCAD 核心引擎验证通过。默认法兰包含66个对象、25个原生尺寸，保存重开、孔槽与20处R8圆角已复核。见 [验证记录](docs/verification.md)。桌面录屏和其他软件版本不在此执行记录内。
 
-源码来源为原 [CAD-SW-ANAYSIS 的 AiCad 部分](https://github.com/qu347/CAD-SW-ANAYSIS/tree/main/AiCad)。本次只提取 AutoCAD 相关内容；文件来源和必要路径调整见 extraction-manifest.json。
+原有代码来源：[CAD-SW-ANAYSIS 的 AiCad 部分](https://github.com/qu347/CAD-SW-ANAYSIS/tree/main/AiCad)。基础文件来源记录见 extraction-manifest.json；1.1.0 的二维接口与配套技能在此工具包中新增。

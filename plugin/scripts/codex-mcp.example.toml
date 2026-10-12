@@ -1,5 +1,6 @@
 # Replace <USER> with the current Windows user name, or select this executable
-# in Codex/ChatGPT desktop Settings > MCP servers > Add server > STDIO.
+# in the MCP settings UI, then refresh the server after an update.
+# Official options: https://learn.chatgpt.com/docs/extend/mcp?surface=cli
 [mcp_servers.ai_cad]
 command = "C:\\Users\\<USER>\\AppData\\Roaming\\Autodesk\\ApplicationPlugins\\AiCad.bundle\\Contents\\Bridge\\AiCad.Bridge.exe"
 startup_timeout_sec = 10
@@ -29,3 +30,15 @@ approval_mode = "prompt"
 
 [mcp_servers.ai_cad.tools.cad_undo_batch]
 approval_mode = "prompt"
+
+[mcp_servers.ai_cad.tools.cad_draw_2d]
+approval_mode = "approve"
+
+[mcp_servers.ai_cad.tools.cad_get_layers]
+approval_mode = "approve"
+
+[mcp_servers.ai_cad.tools.cad_get_geometry]
+approval_mode = "approve"
+
+[mcp_servers.ai_cad.tools.cad_save_drawing]
+approval_mode = "approve"

@@ -5,7 +5,6 @@ $bundleRoot = [System.IO.Path]::GetFullPath((Join-Path $repoRoot 'deploy\AiCad.b
 $manifestPath = Join-Path $bundleRoot 'PackageContents.xml'
 $windowsContent = Join-Path $bundleRoot 'Contents\Windows'
 $bridgeContent = Join-Path $bundleRoot 'Contents\Bridge'
-$bridgePublish = Join-Path $repoRoot 'src\AiCad.Bridge\bin\Release\net8.0\win-x64\publish'
 
 function Assert-FileExists {
     param([Parameter(Mandatory = $true)][string]$Path)
@@ -29,7 +28,6 @@ function Assert-UnderRoot {
 }
 
 Assert-UnderRoot -Path $bundleRoot -Root $repoRoot
-Assert-UnderRoot -Path $bridgePublish -Root $repoRoot
 Assert-FileExists -Path $manifestPath
 
 try {
@@ -67,8 +65,6 @@ if ($forbidden) {
     throw "Autodesk runtime assemblies must not be bundled: $($forbidden.FullName -join ', ')"
 }
 
-Assert-FileExists -Path (Join-Path $bridgePublish 'AiCad.Bridge.exe')
-Assert-FileExists -Path (Join-Path $bridgePublish 'AiCad.Bridge.dll')
 Assert-FileExists -Path (Join-Path $bridgeContent 'AiCad.Bridge.exe')
 Assert-FileExists -Path (Join-Path $bridgeContent 'AiCad.Bridge.dll')
 

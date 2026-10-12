@@ -1,0 +1,6 @@
+interface:
+  display_name: "AutoCAD MCP 复核与教学"
+  short_description: "复核真实孔槽、圆角与原生尺寸，并整理分阶段 CAD 教学演示"
+  default_prompt: "使用 $autocad-mcp-review 读取这张图的实际几何，检查孔槽、圆角和尺寸，并列出演示证据。"
+policy:
+  allow_implicit_invocation: true

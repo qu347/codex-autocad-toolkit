@@ -43,8 +43,10 @@ public static class Drawing2dValidator
                 LinearDimension2d dim => Distinct(dim.First, dim.Second) && IsPoint(dim.LinePoint)
                     && dim.RotationDegrees is 0 or 90 && Prefix(dim.Prefix)
                     && Math.Abs(dim.RotationDegrees == 0 ? dim.Second.X - dim.First.X : dim.Second.Y - dim.First.Y) > 1e-9,
-                RadialDimension2d dim => Distinct(dim.Center, dim.Chord) && Positive(dim.LeaderLength) && Prefix(dim.Prefix),
-                DiameterDimension2d dim => Distinct(dim.Chord, dim.FarChord) && Positive(dim.LeaderLength) && Prefix(dim.Prefix),
+                RadialDimension2d dim => Distinct(dim.Center, dim.Chord) && Positive(dim.LeaderLength) && Prefix(dim.Prefix)
+                    && (dim.TextPosition is null || IsPoint(dim.TextPosition)),
+                DiameterDimension2d dim => Distinct(dim.Chord, dim.FarChord) && Positive(dim.LeaderLength) && Prefix(dim.Prefix)
+                    && (dim.TextPosition is null || IsPoint(dim.TextPosition)),
                 _ => false
             };
             if (!valid) Error(path, "Invalid or degenerate geometry, angle, dimension, or prefix.");

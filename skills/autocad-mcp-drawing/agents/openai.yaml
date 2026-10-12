@@ -1,0 +1,6 @@
+interface:
+  display_name: "AutoCAD MCP 二维绘图"
+  short_description: "连接 AutoCAD，按工程尺寸分阶段绘制并保存真实 DWG 图纸"
+  default_prompt: "使用 $autocad-mcp-drawing 检查连接和单位，按我提供的尺寸分阶段绘图并导出新 DWG。"
+policy:
+  allow_implicit_invocation: true

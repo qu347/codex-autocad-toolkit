@@ -9,7 +9,7 @@ namespace AiCad.Bridge;
 public sealed class CadToolException : McpException
 {
     public CadToolException(string code, string message, Exception? innerException = null)
-        : base(message, innerException)
+        : base($"{code}: {message}", innerException)
     {
         Code = code;
     }

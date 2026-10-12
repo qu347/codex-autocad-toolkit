@@ -91,6 +91,8 @@ internal sealed class AutoCadPlanExecutor
         using var documentLock = document.LockDocument();
         using var transaction = document.Database.TransactionManager.StartTransaction();
         var metadata = _metadataStore.FindByRequest(document.Database, transaction, requestId);
+        if (metadata is { SchemaVersion: "2d-1.0", IsUndone: true })
+            return new RequestStatusResult(requestId, "undone", null);
         return metadata is null
             ? new RequestStatusResult(requestId, "not_found", null)
             : new RequestStatusResult(requestId, "completed", ToCreateResult(metadata, 0));
@@ -104,6 +106,8 @@ internal sealed class AutoCadPlanExecutor
         using var documentLock = document.LockDocument();
         using var transaction = document.Database.TransactionManager.StartTransaction();
         var metadata = RequireActiveBatch(document.Database, transaction, batchId);
+        if (metadata.SchemaVersion != "1.0")
+            throw new CadOperationException("UNSUPPORTED_BATCH", "Hole-diameter replacement applies only to rounded-plate batches. For a 2D stage, inspect and undo the verified latest batch before rebuilding.");
         var plan = ReadPlan(metadata.PlanJson);
         var oldHoles = plan.Steps.OfType<FourHolePatternStep>().Single();
         var proposedPlan = ReplaceHoleDiameter(
@@ -199,7 +203,9 @@ internal sealed class AutoCadPlanExecutor
         }
 
         var target = RequireActiveBatch(document.Database, transaction, batchId);
-        var currentSnapshots = CaptureSnapshots(document.Database, transaction, target.Handles);
+        var currentSnapshots = target.SchemaVersion == "2d-1.0"
+            ? Drawing2dExecutor.CaptureSnapshots(document.Database, transaction, target.Handles)
+            : CaptureSnapshots(document.Database, transaction, target.Handles);
         RequireSnapshotsMatch(target.EntitySnapshots, currentSnapshots);
         EraseEntities(document.Database, transaction, target.Handles);
 
@@ -283,7 +289,7 @@ internal sealed class AutoCadPlanExecutor
         return entities;
     }
 
-    private static Dictionary<string, string> ReadHandles(
+    internal static Dictionary<string, string> ReadHandles(
         Transaction transaction,
         IReadOnlyDictionary<string, ObjectId> entities)
     {
@@ -317,7 +323,7 @@ internal sealed class AutoCadPlanExecutor
         return snapshots;
     }
 
-    private static string Snapshot(Entity entity)
+    internal static string Snapshot(Entity entity)
     {
         var prefix = $"{entity.Handle}|{entity.GetType().Name}|{entity.Layer}";
         return entity switch
@@ -325,6 +331,9 @@ internal sealed class AutoCadPlanExecutor
             Solid3d solid => SnapshotSolid(prefix, solid),
             Polyline polyline => SnapshotPolyline(prefix, polyline),
             Circle circle => $"{prefix}|center={Point(circle.Center)}|radius={Number(circle.Radius)}",
+            Arc arc => $"{prefix}|center={Point(arc.Center)}|radius={Number(arc.Radius)}|start={Number(arc.StartAngle)}|end={Number(arc.EndAngle)}",
+            RadialDimension dimension => $"{prefix}|center={Point(dimension.Center)}|chord={Point(dimension.ChordPoint)}|leader={Number(dimension.LeaderLength)}|text={dimension.DimensionText}|position={Point(dimension.TextPosition)}",
+            RotatedDimension dimension => $"{prefix}|p1={Point(dimension.XLine1Point)}|p2={Point(dimension.XLine2Point)}|line={Point(dimension.DimLinePoint)}|rotation={Number(dimension.Rotation)}|text={dimension.DimensionText}",
             Line line => FormattableString.Invariant(
                 $"{prefix}|start={Point(line.StartPoint)}|end={Point(line.EndPoint)}"),
             AlignedDimension dimension =>
@@ -495,7 +504,7 @@ internal sealed class AutoCadPlanExecutor
             elapsedMilliseconds);
     }
 
-    private sealed class UndoScope : IDisposable
+    internal sealed class UndoScope : IDisposable
     {
         private readonly System.Reflection.MethodInfo? _setUndoMark;
         private readonly bool _started;

@@ -1,0 +1,1374 @@
+{
+  "entities": {
+    "items": [
+      {
+        "handle": "2CF",
+        "entityType": "Polyline",
+        "layer": "OUTLINE",
+        "min": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "max": {
+          "x": 220,
+          "y": 160,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2D9",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 80,
+          "y": 50,
+          "z": 0
+        },
+        "max": {
+          "x": 140,
+          "y": 110,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DA",
+        "entityType": "Circle",
+        "layer": "CENTER",
+        "min": {
+          "x": 65,
+          "y": 35,
+          "z": 0
+        },
+        "max": {
+          "x": 155,
+          "y": 125,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DB",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": -5,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 225,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DC",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 110,
+          "y": -5,
+          "z": 0
+        },
+        "max": {
+          "x": 110,
+          "y": 165,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DD",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 150,
+          "y": 75,
+          "z": 0
+        },
+        "max": {
+          "x": 160,
+          "y": 85,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DE",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 148,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 162,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2DF",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 155,
+          "y": 73,
+          "z": 0
+        },
+        "max": {
+          "x": 155,
+          "y": 87,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E0",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 127.5,
+          "y": 113.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 137.5,
+          "y": 123.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E1",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 125.5,
+          "y": 118.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 139.5,
+          "y": 118.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E2",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 132.5,
+          "y": 111.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 132.5,
+          "y": 125.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E3",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 82.5,
+          "y": 113.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 92.5,
+          "y": 123.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E4",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 80.5,
+          "y": 118.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 94.5,
+          "y": 118.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E5",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 87.5,
+          "y": 111.9711431703,
+          "z": 0
+        },
+        "max": {
+          "x": 87.5,
+          "y": 125.9711431703,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E6",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 60,
+          "y": 75,
+          "z": 0
+        },
+        "max": {
+          "x": 70,
+          "y": 85,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E7",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 58,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 72,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E8",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 65,
+          "y": 73,
+          "z": 0
+        },
+        "max": {
+          "x": 65,
+          "y": 87,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2E9",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 82.5,
+          "y": 36.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 92.5,
+          "y": 46.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2EA",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 80.5,
+          "y": 41.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 94.5,
+          "y": 41.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2EB",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 87.5,
+          "y": 34.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 87.5,
+          "y": 48.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2EC",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 127.5,
+          "y": 36.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 137.5,
+          "y": 46.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2ED",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 125.5,
+          "y": 41.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 139.5,
+          "y": 41.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2EE",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 132.5,
+          "y": 34.0288568297,
+          "z": 0
+        },
+        "max": {
+          "x": 132.5,
+          "y": 48.0288568297,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2EF",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 40.5,
+          "y": 35.5,
+          "z": 0
+        },
+        "max": {
+          "x": 49.5,
+          "y": 44.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F0",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 38.5,
+          "y": 40,
+          "z": 0
+        },
+        "max": {
+          "x": 51.5,
+          "y": 40,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F1",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 45,
+          "y": 33.5,
+          "z": 0
+        },
+        "max": {
+          "x": 45,
+          "y": 46.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F2",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 170.5,
+          "y": 35.5,
+          "z": 0
+        },
+        "max": {
+          "x": 179.5,
+          "y": 44.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F3",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 168.5,
+          "y": 40,
+          "z": 0
+        },
+        "max": {
+          "x": 181.5,
+          "y": 40,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F4",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 175,
+          "y": 33.5,
+          "z": 0
+        },
+        "max": {
+          "x": 175,
+          "y": 46.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F5",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 40.5,
+          "y": 115.5,
+          "z": 0
+        },
+        "max": {
+          "x": 49.5,
+          "y": 124.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F6",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 38.5,
+          "y": 120,
+          "z": 0
+        },
+        "max": {
+          "x": 51.5,
+          "y": 120,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F7",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 45,
+          "y": 113.5,
+          "z": 0
+        },
+        "max": {
+          "x": 45,
+          "y": 126.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F8",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "min": {
+          "x": 170.5,
+          "y": 115.5,
+          "z": 0
+        },
+        "max": {
+          "x": 179.5,
+          "y": 124.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2F9",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 168.5,
+          "y": 120,
+          "z": 0
+        },
+        "max": {
+          "x": 181.5,
+          "y": 120,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FA",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 175,
+          "y": 113.5,
+          "z": 0
+        },
+        "max": {
+          "x": 175,
+          "y": 126.5,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FB",
+        "entityType": "Polyline",
+        "layer": "HOLE",
+        "min": {
+          "x": 10,
+          "y": 74,
+          "z": 0
+        },
+        "max": {
+          "x": 40,
+          "y": 86,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FC",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 7,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 43,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FD",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 25,
+          "y": 62,
+          "z": 0
+        },
+        "max": {
+          "x": 25,
+          "y": 98,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FE",
+        "entityType": "Polyline",
+        "layer": "HOLE",
+        "min": {
+          "x": 180,
+          "y": 74,
+          "z": 0
+        },
+        "max": {
+          "x": 210,
+          "y": 86,
+          "z": 0
+        }
+      },
+      {
+        "handle": "2FF",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 177,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 213,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "300",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "min": {
+          "x": 195,
+          "y": 62,
+          "z": 0
+        },
+        "max": {
+          "x": 195,
+          "y": 98,
+          "z": 0
+        }
+      },
+      {
+        "handle": "355",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -8.036744619404505e-15,
+          "y": -51.25,
+          "z": 0
+        },
+        "max": {
+          "x": 220,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "364",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 110.00000000000006,
+          "y": 0,
+          "z": 0
+        },
+        "max": {
+          "x": 271.2500000000002,
+          "y": 160.00000000000009,
+          "z": 0
+        }
+      },
+      {
+        "handle": "371",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 0,
+          "y": 110,
+          "z": 0
+        },
+        "max": {
+          "x": 25.000000000000004,
+          "y": 187.24459553695954,
+          "z": 0
+        }
+      },
+      {
+        "handle": "37E",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 25,
+          "y": 140,
+          "z": 0
+        },
+        "max": {
+          "x": 55,
+          "y": 187.24459553695954,
+          "z": 0
+        }
+      },
+      {
+        "handle": "38B",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 55,
+          "y": 160,
+          "z": 0
+        },
+        "max": {
+          "x": 165,
+          "y": 187.26412133891213,
+          "z": 0
+        }
+      },
+      {
+        "handle": "398",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 165,
+          "y": 140,
+          "z": 0
+        },
+        "max": {
+          "x": 195,
+          "y": 187.24459553695954,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3A5",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 195,
+          "y": 110,
+          "z": 0
+        },
+        "max": {
+          "x": 220,
+          "y": 187.24459553695954,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3B2",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -29.24459553695957,
+          "y": -1.3065996528622674e-14,
+          "z": 0
+        },
+        "max": {
+          "x": 55.00000000000003,
+          "y": 20.000000000000007,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3BF",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -29.24459553695956,
+          "y": 19.999999999999996,
+          "z": 0
+        },
+        "max": {
+          "x": 25.000000000000014,
+          "y": 50.00000000000003,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3CC",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -29.24459553695955,
+          "y": 50.00000000000002,
+          "z": 0
+        },
+        "max": {
+          "x": 0,
+          "y": 110.00000000000006,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3D9",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -29.244595536959537,
+          "y": 110.00000000000006,
+          "z": 0
+        },
+        "max": {
+          "x": 25.000000000000014,
+          "y": 140.00000000000006,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3E6",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -29.24459553695953,
+          "y": 140.00000000000006,
+          "z": 0
+        },
+        "max": {
+          "x": 55.00000000000003,
+          "y": 160.00000000000006,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3F3",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -4.1791072020903425e-15,
+          "y": -18.25,
+          "z": 0
+        },
+        "max": {
+          "x": 45,
+          "y": 50,
+          "z": 0
+        }
+      },
+      {
+        "handle": "400",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 44.99999999999999,
+          "y": -18.25,
+          "z": 0
+        },
+        "max": {
+          "x": 175,
+          "y": 40,
+          "z": 0
+        }
+      },
+      {
+        "handle": "40D",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -49.244595536959565,
+          "y": -1.6282241827975947e-14,
+          "z": 0
+        },
+        "max": {
+          "x": 55.00000000000003,
+          "y": 40.000000000000014,
+          "z": 0
+        }
+      },
+      {
+        "handle": "41A",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -49.244595536959544,
+          "y": 40.00000000000001,
+          "z": 0
+        },
+        "max": {
+          "x": 45.000000000000014,
+          "y": 120.00000000000006,
+          "z": 0
+        }
+      },
+      {
+        "handle": "427",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -5.158824641408225e-15,
+          "y": -34.25,
+          "z": 0
+        },
+        "max": {
+          "x": 25,
+          "y": 80,
+          "z": 0
+        }
+      },
+      {
+        "handle": "434",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -69.2445955369596,
+          "y": -1.949848712732922e-14,
+          "z": 0
+        },
+        "max": {
+          "x": 55.00000000000003,
+          "y": 80.00000000000003,
+          "z": 0
+        }
+      },
+      {
+        "handle": "441",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 10,
+          "y": 80,
+          "z": 0
+        },
+        "max": {
+          "x": 40,
+          "y": 103.24459553695957,
+          "z": 0
+        }
+      },
+      {
+        "handle": "44E",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 25.000000000000014,
+          "y": 74.00000000000003,
+          "z": 0
+        },
+        "max": {
+          "x": 53.25000000000006,
+          "y": 86.00000000000004,
+          "z": 0
+        }
+      },
+      {
+        "handle": "45B",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 90.24486176394399,
+          "y": 57.422699158794,
+          "z": 0
+        },
+        "max": {
+          "x": 129.755138236056,
+          "y": 102.57730084120598,
+          "z": 0
+        }
+      },
+      {
+        "handle": "464",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 63.015368960707804,
+          "y": 29.72871339027742,
+          "z": 0
+        },
+        "max": {
+          "x": 248.9894975333686,
+          "y": 97.10100716629228,
+          "z": 0
+        }
+      },
+      {
+        "handle": "470",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 122.81286612634193,
+          "y": 116.48932180005048,
+          "z": 0
+        },
+        "max": {
+          "x": 246.70338989154362,
+          "y": 152.2053860202126,
+          "z": 0
+        }
+      },
+      {
+        "handle": "47C",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "min": {
+          "x": 165.5,
+          "y": 119.58333333333333,
+          "z": 0
+        },
+        "max": {
+          "x": 245.7360529986053,
+          "y": 124.26168061366806,
+          "z": 0
+        }
+      },
+      {
+        "handle": "488",
+        "entityType": "RadialDimension",
+        "layer": "DIM",
+        "min": {
+          "x": -17.717012566999166,
+          "y": 102,
+          "z": 0
+        },
+        "max": {
+          "x": 8.000000000000014,
+          "y": 130.27645311633586,
+          "z": 0
+        }
+      }
+    ],
+    "totalCount": 66,
+    "documentFingerprint": "b72503b4504aa8805e8ab89b627f55569d37f4c999dec72d43286f6054d1bd84"
+  },
+  "dimensions": {
+    "items": [
+      {
+        "handle": "355",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 220,
+        "displayText": "",
+        "textPosition": {
+          "x": 110,
+          "y": -47.565202231520225,
+          "z": 0
+        }
+      },
+      {
+        "handle": "364",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 160.00000000000003,
+        "displayText": "",
+        "textPosition": {
+          "x": 267.5554393305441,
+          "y": 79.99999999999997,
+          "z": 0
+        }
+      },
+      {
+        "handle": "371",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 25,
+        "displayText": "",
+        "textPosition": {
+          "x": 12.500000000000004,
+          "y": 185.43479776847977,
+          "z": 0
+        }
+      },
+      {
+        "handle": "37E",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 30,
+        "displayText": "",
+        "textPosition": {
+          "x": 40,
+          "y": 185.43479776847977,
+          "z": 0
+        }
+      },
+      {
+        "handle": "38B",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 110,
+        "displayText": "",
+        "textPosition": {
+          "x": 110,
+          "y": 185.44456066945605,
+          "z": 0
+        }
+      },
+      {
+        "handle": "398",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 30,
+        "displayText": "",
+        "textPosition": {
+          "x": 180,
+          "y": 185.43479776847977,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3A5",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 25,
+        "displayText": "",
+        "textPosition": {
+          "x": 207.5,
+          "y": 185.43479776847977,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3B2",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 20.000000000000007,
+        "displayText": "",
+        "textPosition": {
+          "x": -27.434797768479793,
+          "y": 9.999999999999998,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3BF",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 30.000000000000018,
+        "displayText": "",
+        "textPosition": {
+          "x": -27.434797768479786,
+          "y": 35.00000000000001,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3CC",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 60.000000000000014,
+        "displayText": "",
+        "textPosition": {
+          "x": -27.434797768479775,
+          "y": 80.00000000000003,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3D9",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 30,
+        "displayText": "",
+        "textPosition": {
+          "x": -27.43479776847976,
+          "y": 125.00000000000003,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3E6",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 20,
+        "displayText": "",
+        "textPosition": {
+          "x": -27.434797768479754,
+          "y": 150.00000000000003,
+          "z": 0
+        }
+      },
+      {
+        "handle": "3F3",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 45,
+        "displayText": "",
+        "textPosition": {
+          "x": 22.499999999999996,
+          "y": -14.594490934449095,
+          "z": 0
+        }
+      },
+      {
+        "handle": "400",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 130,
+        "displayText": "",
+        "textPosition": {
+          "x": 110,
+          "y": -14.555439330543933,
+          "z": 0
+        }
+      },
+      {
+        "handle": "40D",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 40.000000000000014,
+        "displayText": "",
+        "textPosition": {
+          "x": -47.43479776847979,
+          "y": 20.000000000000004,
+          "z": 0
+        }
+      },
+      {
+        "handle": "41A",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 80.00000000000001,
+        "displayText": "",
+        "textPosition": {
+          "x": -47.43479776847977,
+          "y": 80.00000000000001,
+          "z": 0
+        }
+      },
+      {
+        "handle": "427",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 25,
+        "displayText": "",
+        "textPosition": {
+          "x": 12.499999999999995,
+          "y": -30.565202231520225,
+          "z": 0
+        }
+      },
+      {
+        "handle": "434",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 80.00000000000003,
+        "displayText": "",
+        "textPosition": {
+          "x": -67.43479776847981,
+          "y": 40.000000000000014,
+          "z": 0
+        }
+      },
+      {
+        "handle": "441",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 30,
+        "displayText": "",
+        "textPosition": {
+          "x": 25,
+          "y": 101.43479776847978,
+          "z": 0
+        }
+      },
+      {
+        "handle": "44E",
+        "dimensionType": "RotatedDimension",
+        "layer": "DIM",
+        "measurement": 12,
+        "displayText": "",
+        "textPosition": {
+          "x": 49.585948396094906,
+          "y": 80.00000000000001,
+          "z": 0
+        }
+      },
+      {
+        "handle": "45B",
+        "dimensionType": "DiametricDimension",
+        "layer": "DIM",
+        "measurement": 60.00000000000009,
+        "displayText": "",
+        "textPosition": {
+          "x": 102.99999999999984,
+          "y": 87.99999999999987,
+          "z": 0
+        }
+      },
+      {
+        "handle": "464",
+        "dimensionType": "DiametricDimension",
+        "layer": "DIM",
+        "measurement": 90.00000000000003,
+        "displayText": "PCD <>",
+        "textPosition": {
+          "x": 237.99999999999974,
+          "y": 33.41181001389913,
+          "z": 0
+        }
+      },
+      {
+        "handle": "470",
+        "dimensionType": "DiametricDimension",
+        "layer": "DIM",
+        "measurement": 9.99999999999983,
+        "displayText": "6X <>",
+        "textPosition": {
+          "x": 237.99999999999943,
+          "y": 146.00000000000256,
+          "z": 0
+        }
+      },
+      {
+        "handle": "47C",
+        "dimensionType": "DiametricDimension",
+        "layer": "DIM",
+        "measurement": 9,
+        "displayText": "4X <>",
+        "textPosition": {
+          "x": 238,
+          "y": 120,
+          "z": 0
+        }
+      },
+      {
+        "handle": "488",
+        "dimensionType": "RadialDimension",
+        "layer": "DIM",
+        "measurement": 7.99999999999946,
+        "displayText": "20X <>",
+        "textPosition": {
+          "x": -11.999999999999993,
+          "y": 122,
+          "z": 0
+        }
+      }
+    ],
+    "totalCount": 25,
+    "documentFingerprint": "b72503b4504aa8805e8ab89b627f55569d37f4c999dec72d43286f6054d1bd84"
+  },
+  "requestStatus": {
+    "requestId": "0f298f8b-ba3a-4a9c-bda8-7bb9fbd19e4b",
+    "status": "completed",
+    "result": {
+      "success": true,
+      "batchId": "73e5da7c8db443c9b40515fb07980636",
+      "handles": {
+        "width": "355",
+        "height": "364",
+        "step-x-1": "371",
+        "step-x-2": "37E",
+        "step-x-3": "38B",
+        "step-x-4": "398",
+        "step-x-5": "3A5",
+        "step-y-1": "3B2",
+        "step-y-2": "3BF",
+        "step-y-3": "3CC",
+        "step-y-4": "3D9",
+        "step-y-5": "3E6",
+        "mount-offset-x": "3F3",
+        "mount-spacing-x": "400",
+        "mount-offset-y": "40D",
+        "mount-spacing-y": "41A",
+        "slot-position-x": "427",
+        "slot-position-y": "434",
+        "slot-length": "441",
+        "slot-width": "44E",
+        "bore-diameter": "45B",
+        "pitch-diameter": "464",
+        "bolt-diameter": "470",
+        "mount-diameter": "47C",
+        "corner-radius": "488"
+      },
+      "warnings": [],
+      "elapsedMilliseconds": 0
+    }
+  },
+  "duplicate": {
+    "success": true,
+    "batchId": "73e5da7c8db443c9b40515fb07980636",
+    "handles": {
+      "width": "355",
+      "height": "364",
+      "step-x-1": "371",
+      "step-x-2": "37E",
+      "step-x-3": "38B",
+      "step-x-4": "398",
+      "step-x-5": "3A5",
+      "step-y-1": "3B2",
+      "step-y-2": "3BF",
+      "step-y-3": "3CC",
+      "step-y-4": "3D9",
+      "step-y-5": "3E6",
+      "mount-offset-x": "3F3",
+      "mount-spacing-x": "400",
+      "mount-offset-y": "40D",
+      "mount-spacing-y": "41A",
+      "slot-position-x": "427",
+      "slot-position-y": "434",
+      "slot-length": "441",
+      "slot-width": "44E",
+      "bore-diameter": "45B",
+      "pitch-diameter": "464",
+      "bolt-diameter": "470",
+      "mount-diameter": "47C",
+      "corner-radius": "488"
+    },
+    "warnings": [],
+    "elapsedMilliseconds": 0
+  }
+}

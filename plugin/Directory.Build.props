@@ -5,6 +5,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <Deterministic>true</Deterministic>
+    <Version>1.1.0</Version>
     <AutoCADInstallDir Condition="'$(AutoCADInstallDir)' == ''">$(AUTOCAD_PATH)</AutoCADInstallDir>
     <AutoCADInstallDir Condition="'$(AutoCADInstallDir)' == ''">C:\Program Files\Autodesk\AutoCAD 2026</AutoCADInstallDir>
   </PropertyGroup>

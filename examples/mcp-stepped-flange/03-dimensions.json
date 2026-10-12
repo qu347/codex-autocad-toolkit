@@ -1,0 +1,470 @@
+{
+  "schemaVersion": "2d-1.0",
+  "requestId": "00000000-0000-0000-0000-000000000067",
+  "documentFingerprint": "",
+  "unit": "millimeter",
+  "layers": [
+    {
+      "name": "DIM",
+      "color": 3,
+      "lineType": "Continuous"
+    }
+  ],
+  "entities": [
+    {
+      "type": "linear_dimension",
+      "id": "width",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 80
+      },
+      "second": {
+        "x": 220,
+        "y": 80
+      },
+      "linePoint": {
+        "x": 110.0,
+        "y": -50
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "height",
+      "layer": "DIM",
+      "first": {
+        "x": 110,
+        "y": 0
+      },
+      "second": {
+        "x": 110,
+        "y": 160
+      },
+      "linePoint": {
+        "x": 270,
+        "y": 80.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-x-1",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 110
+      },
+      "second": {
+        "x": 25,
+        "y": 140
+      },
+      "linePoint": {
+        "x": 12.5,
+        "y": 183
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-x-2",
+      "layer": "DIM",
+      "first": {
+        "x": 25,
+        "y": 140
+      },
+      "second": {
+        "x": 55,
+        "y": 160
+      },
+      "linePoint": {
+        "x": 40.0,
+        "y": 183
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-x-3",
+      "layer": "DIM",
+      "first": {
+        "x": 55,
+        "y": 160
+      },
+      "second": {
+        "x": 165,
+        "y": 160
+      },
+      "linePoint": {
+        "x": 110.0,
+        "y": 183
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-x-4",
+      "layer": "DIM",
+      "first": {
+        "x": 165,
+        "y": 160
+      },
+      "second": {
+        "x": 195,
+        "y": 140
+      },
+      "linePoint": {
+        "x": 180.0,
+        "y": 183
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-x-5",
+      "layer": "DIM",
+      "first": {
+        "x": 195,
+        "y": 140
+      },
+      "second": {
+        "x": 220,
+        "y": 110
+      },
+      "linePoint": {
+        "x": 207.5,
+        "y": 183
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-y-1",
+      "layer": "DIM",
+      "first": {
+        "x": 55,
+        "y": 0
+      },
+      "second": {
+        "x": 25,
+        "y": 20
+      },
+      "linePoint": {
+        "x": -25,
+        "y": 10.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-y-2",
+      "layer": "DIM",
+      "first": {
+        "x": 25,
+        "y": 20
+      },
+      "second": {
+        "x": 0,
+        "y": 50
+      },
+      "linePoint": {
+        "x": -25,
+        "y": 35.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-y-3",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 50
+      },
+      "second": {
+        "x": 0,
+        "y": 110
+      },
+      "linePoint": {
+        "x": -25,
+        "y": 80.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-y-4",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 110
+      },
+      "second": {
+        "x": 25,
+        "y": 140
+      },
+      "linePoint": {
+        "x": -25,
+        "y": 125.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "step-y-5",
+      "layer": "DIM",
+      "first": {
+        "x": 25,
+        "y": 140
+      },
+      "second": {
+        "x": 55,
+        "y": 160
+      },
+      "linePoint": {
+        "x": -25,
+        "y": 150.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "mount-offset-x",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 50
+      },
+      "second": {
+        "x": 45,
+        "y": 40
+      },
+      "linePoint": {
+        "x": 22.5,
+        "y": -17
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "mount-spacing-x",
+      "layer": "DIM",
+      "first": {
+        "x": 45,
+        "y": 40
+      },
+      "second": {
+        "x": 175,
+        "y": 40
+      },
+      "linePoint": {
+        "x": 110.0,
+        "y": -17
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "mount-offset-y",
+      "layer": "DIM",
+      "first": {
+        "x": 55,
+        "y": 0
+      },
+      "second": {
+        "x": 45,
+        "y": 40
+      },
+      "linePoint": {
+        "x": -45,
+        "y": 20.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "mount-spacing-y",
+      "layer": "DIM",
+      "first": {
+        "x": 45,
+        "y": 40
+      },
+      "second": {
+        "x": 45,
+        "y": 120
+      },
+      "linePoint": {
+        "x": -45,
+        "y": 80.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "slot-position-x",
+      "layer": "DIM",
+      "first": {
+        "x": 0,
+        "y": 50
+      },
+      "second": {
+        "x": 25,
+        "y": 80
+      },
+      "linePoint": {
+        "x": 12.5,
+        "y": -33
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "slot-position-y",
+      "layer": "DIM",
+      "first": {
+        "x": 55,
+        "y": 0
+      },
+      "second": {
+        "x": 25,
+        "y": 80
+      },
+      "linePoint": {
+        "x": -65,
+        "y": 40.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "linear_dimension",
+      "id": "slot-length",
+      "layer": "DIM",
+      "first": {
+        "x": 10,
+        "y": 80
+      },
+      "second": {
+        "x": 40,
+        "y": 80
+      },
+      "linePoint": {
+        "x": 25.0,
+        "y": 99
+      },
+      "rotationDegrees": 0
+    },
+    {
+      "type": "linear_dimension",
+      "id": "slot-width",
+      "layer": "DIM",
+      "first": {
+        "x": 25,
+        "y": 74
+      },
+      "second": {
+        "x": 25,
+        "y": 86
+      },
+      "linePoint": {
+        "x": 52,
+        "y": 80.0
+      },
+      "rotationDegrees": 90
+    },
+    {
+      "type": "diameter_dimension",
+      "id": "bore-diameter",
+      "layer": "DIM",
+      "chord": {
+        "x": 90.244861763944,
+        "y": 102.577300841206
+      },
+      "farChord": {
+        "x": 129.755138236056,
+        "y": 57.422699158794
+      },
+      "leaderLength": 10,
+      "prefix": "",
+      "textPosition": {
+        "x": 103,
+        "y": 88
+      }
+    },
+    {
+      "type": "diameter_dimension",
+      "id": "pitch-diameter",
+      "layer": "DIM",
+      "chord": {
+        "x": 152.286167935363,
+        "y": 64.609093550337
+      },
+      "farChord": {
+        "x": 67.713832064637,
+        "y": 95.390906449663
+      },
+      "leaderLength": 10,
+      "prefix": "PCD ",
+      "textPosition": {
+        "x": 238,
+        "y": 33.4118100139
+      }
+    },
+    {
+      "type": "diameter_dimension",
+      "id": "bolt-diameter",
+      "layer": "DIM",
+      "chord": {
+        "x": 137.343566936829,
+        "y": 120.212053855424
+      },
+      "farChord": {
+        "x": 127.656433063171,
+        "y": 117.730232485175
+      },
+      "leaderLength": 10,
+      "prefix": "6X ",
+      "textPosition": {
+        "x": 238,
+        "y": 146
+      }
+    },
+    {
+      "type": "diameter_dimension",
+      "id": "mount-diameter",
+      "layer": "DIM",
+      "chord": {
+        "x": 179.5,
+        "y": 120.0
+      },
+      "farChord": {
+        "x": 170.5,
+        "y": 120.0
+      },
+      "leaderLength": 10,
+      "prefix": "4X ",
+      "textPosition": {
+        "x": 238,
+        "y": 120
+      }
+    },
+    {
+      "type": "radial_dimension",
+      "id": "corner-radius",
+      "layer": "DIM",
+      "center": {
+        "x": 8,
+        "y": 102
+      },
+      "chord": {
+        "x": 2.343145750508,
+        "y": 107.656854249492
+      },
+      "leaderLength": 20,
+      "prefix": "20X ",
+      "textPosition": {
+        "x": -12,
+        "y": 122
+      }
+    }
+  ]
+}

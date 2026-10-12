@@ -30,9 +30,9 @@ public sealed record LinearDimension2d(string Id, string Layer, [property: JsonR
     [property: JsonRequired] Point2 Second, [property: JsonRequired] Point2 LinePoint,
     double RotationDegrees = 0, string Prefix = "") : Entity2d(Id, Layer);
 public sealed record RadialDimension2d(string Id, string Layer, [property: JsonRequired] Point2 Center,
-    [property: JsonRequired] Point2 Chord, double LeaderLength = 10, string Prefix = "") : Entity2d(Id, Layer);
+    [property: JsonRequired] Point2 Chord, double LeaderLength = 10, string Prefix = "", Point2? TextPosition = null) : Entity2d(Id, Layer);
 public sealed record DiameterDimension2d(string Id, string Layer, [property: JsonRequired] Point2 Chord,
-    [property: JsonRequired] Point2 FarChord, double LeaderLength = 10, string Prefix = "") : Entity2d(Id, Layer);
+    [property: JsonRequired] Point2 FarChord, double LeaderLength = 10, string Prefix = "", Point2? TextPosition = null) : Entity2d(Id, Layer);
 
 public sealed record Drawing2dPlan(
     [property: JsonRequired] string SchemaVersion,

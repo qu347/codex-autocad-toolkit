@@ -1,40 +1,46 @@
-# 验证记录
+# 1.1.0 验证记录
 
-验证日期：2026-10-10。测试对象为本仓库独立目录内的源码与脚本。
+日期：2026-10-12。测试对象为此工具包的本地源码、编译包、安装后的插件与Skills。
 
-## 验证环境
+## 环境与执行范围
 
-- Windows；AutoCAD 2026 核心引擎 R25.1。
-- .NET SDK 8.0.425；Release 构建。
-- 通过 AUTOCAD_PATH 指定实际安装目录，没有依赖原项目目录。
+Windows，AutoCAD 2026核心引擎R25.1（W.60.0.0），.NET SDK8.0.425，Release，Python3.12。MCP调用使用真实JSON-RPC STDIO客户端，再经当前用户命名管道到AutoCAD主线程与数据库事务。Core Console 测试通过 AICADWAITFORRPC 泵送主线程；这不是桌面录屏流程的验证。
 
-## 实际结果
+## 结果
 
-| 检查 | 结果 |
+| 检查 | 实际结果 |
 |---|---|
-| 编译 | 0 个警告，0 个错误 |
-| AiCad.Contracts 单元测试 | 44 / 44 通过 |
-| AiCad.Mechanical 单元测试 | 8 / 8 通过 |
-| AiCad.Bridge 单元测试 | 34 / 34 通过 |
-| 发布包检查 | AICAD_PACKAGE_VALID |
-| 原生插件加载和状态 | AICAD_READY，pipe=available |
-| 圆角底板三维实体与二维三视图 | plate2d3d 通过 |
-| 重复请求幂等性 | duplicate_request 通过 |
-| 修改提议取消与应用 | approval_cancel、approval_apply 通过 |
-| 批次撤销与原生撤销组 | batch_undo、native_undo_group 通过 |
-| 当前用户命名管道端到端通信 | pipe_end_to_end 通过 |
-| Codex Skill 格式 | quick_validate.py 通过 |
+| 编译 | 0警告、0错误 |
+| Contracts 单元测试 | 67/67 |
+| Mechanical 单元测试 | 8/8 |
+| Bridge 单元测试 | 38/38 |
+| 总计 | 113项通过，保留原有86项 |
+| 发布包 | AICAD_PACKAGE_VALID，不含Autodesk运行时DLL |
+| 新MCP | initialize、17工具列表、known error返回通过 |
+| 原生插件与旧模板 | AICAD_READY；plate2d3d、approval_cancel/apply、duplicate_request、batch_undo、native_undo_group、pipe_end_to_end通过 |
+| 二维基础实体 | Line、Circle、Arc、bulge Polyline、AlignedDimension实创建与读回通过 |
+| 复杂阶梯法兰 | 三阶段创建66对象，25原生尺寸，主要measurement匹配 |
+| 幂等与保护 | 同请求同句柄；同GUID改计划被拒绝；已有输出不覆盖；图层冲突回滚通过 |
+| 被改对象保护 | 修改圆半径后撤销拒绝；修改多段线宽度后撤销和重试拒绝；恢复后正常撤销 |
+| DWG重开 | 66对象、25尺寸；持久化原请求再次返回原句柄 |
+| 独立DXF | 无审计错误/修复；闭合轮廓、20处R8、11孔与两槽核验通过 |
+| 成图视觉 | 实际DXF渲染PNG已查看，径向符号无重复或缺字 |
+| Skills | 两套quick_validate、UI元数据与安装副本一致性通过；独立只读应用测试通过 |
+| 本机安装 | Native/Bridge与发布包一致；安装后17工具、实际圆绘制和DWG保存通过 |
 
-共 86 项单元测试通过，另有上述 AutoCAD 原生集成检查。
-集成测试仅临时把本地插件目录加入 TRUSTEDPATHS，加载后恢复；没有关闭 SECURELOAD。
+真实法兰证据在 [mcp-evidence.json](../examples/mcp-stepped-flange/mcp-evidence.json)、[reopen-evidence.json](../examples/mcp-stepped-flange/reopen-evidence.json) 与 [verification.json](../examples/mcp-stepped-flange/verification.json)。记录的路径、进程号、指纹为当次测试值，不能当作下次连接上下文。
 
-## 阶梯法兰案例
+## 修正与回归
 
-默认参数的参考 DWG/DXF 和分阶段 AutoLISP 脚本见 examples/stepped-flange/。
-图纸已在 AutoCAD 2026 生成、保存重开并校核：外形 220 × 160 mm、20 处 R8 圆角、中心孔 φ60、节圆 φ90 上 6 个 φ10 孔、4 个 φ9 安装孔、2 个 30 × 12 长圆槽，以及 25 个原生尺寸实体。
-具体校核数值见该目录的 verification.json。
+- 原生尺寸自动添加R/直径符号；自定义数量前缀只保留前缀与<>，修正重复RR与%%c。独立DXF校核先复现失败，再修正通过。
+- acadiso模板Arial字体没有U+2205字形。新增独立AICAD-2D-DIM样式，使用本机Windows的seguisym.ttf，不修改Standard样式；实际导出预览直径符号可见。
+- 尺寸文字重生成产生约1e-13数值漂移。快照文字位置取6位小数，重复请求/保存重开稳定，实际几何修改仍被拒绝。
+- 审查发现多段线宽度修改遗漏。真实旧代码撤销误通过；补充各段起止宽度、法向与厚度后，真实MCP撤销/重试返回TARGET_CHANGED。只补新二维快照，保留旧模板快照格式。
 
 ## 范围
 
-本记录说明列出的版本、默认参数和测试路径已经实际执行。其他 AutoCAD 版本、自定义参数、桌面操作及具体工程任务应重新验证。
-插件直接生成圆角矩形四孔底板；阶梯法兰由独立 AutoLISP 案例脚本绘制。
+默认法兰：220×160 mm，20处R8，中央Ø60，Ø90节圆上6×Ø10，4×Ø9，两处30×12槽。新MCP绘图见examples/mcp-stepped-flange；原有独立LSP案例保留在examples/stepped-flange。其他软件版本、尺寸变体和具体制造任务需按当次结果复核。
+
+原生尺寸依赖定义点，未实现对轮廓句柄的关联更新；图形修改后重新复核尺寸。当前MCP不含截图和缩放接口。测试加载仅临时添加本地插件目录到TRUSTEDPATHS，随后恢复，没有关闭SECURELOAD。
+
+更新插件、配置与Skills已保留备份；本会话旧MCP进程不会自动重新加载新工具目录，需要刷新MCP或新开Codex会话后使用。

@@ -35,6 +35,37 @@ public sealed class Drawing2dTests
         Assert.Throws<PlanValidationException>(() => Parse(json.ToJsonString()));
     }
 
+    [Theory]
+    [InlineData("1e309")]
+    [InlineData("NaN")]
+    [InlineData("-Infinity")]
+    public void NonFiniteRadius_IsRejected(string value)
+    {
+        Assert.Throws<PlanValidationException>(() => Parse(ValidJson.Replace("\"radius\":30", $"\"radius\":{value}")));
+    }
+
+    [Fact]
+    public void OversizedLayerList_IsRejected()
+    {
+        var json = JsonNode.Parse(ValidJson)!;
+        json["layers"] = new JsonArray(Enumerable.Range(0, 33)
+            .Select(i => (JsonNode?)new JsonObject { ["name"] = $"L{i}" }).ToArray());
+        Assert.Throws<PlanValidationException>(() => Parse(json.ToJsonString()));
+    }
+
+    [Fact]
+    public void OversizedEntityList_IsRejected()
+    {
+        var json = JsonNode.Parse(ValidJson)!;
+        json["entities"] = new JsonArray(Enumerable.Range(0, 501).Select(i =>
+        {
+            var circle = json["entities"]![0]!.DeepClone();
+            circle["id"] = $"C{i}";
+            return (JsonNode?)circle;
+        }).ToArray());
+        Assert.Throws<PlanValidationException>(() => Parse(json.ToJsonString()));
+    }
+
     [Fact]
     public void UnknownEntityType_IsRejected()
     {
@@ -73,6 +104,16 @@ public sealed class Drawing2dTests
         var json = JsonNode.Parse(ValidJson)!;
         json["entities"] = JsonNode.Parse("""[{"type":"polyline","id":"slot","layer":"HOLE","closed":true,"vertices":[{"x":0,"y":-6,"bulge":0},{"x":18,"y":-6,"bulge":1},{"x":18,"y":6,"bulge":0},{"x":0,"y":6,"bulge":1}]}]""");
         Assert.NotNull(Parse(json.ToJsonString()));
+    }
+
+    [Fact]
+    public void DiameterDimension_AllowsExplicitTextPosition()
+    {
+        var json = JsonNode.Parse(ValidJson)!;
+        json["entities"] = JsonNode.Parse("""[{"type":"diameter_dimension","id":"diameter","layer":"HOLE","chord":{"x":30,"y":0},"farChord":{"x":-30,"y":0},"leaderLength":10,"prefix":"6X ","textPosition":{"x":40,"y":15}}]""");
+        var plan = Parse(json.ToJsonString());
+        var result = JsonSerializer.SerializeToNode(plan, plan.GetType(), PlanJson.Options)!;
+        Assert.Equal(40, result["entities"]![0]!["textPosition"]!["x"]!.GetValue<double>());
     }
 
     [Fact]

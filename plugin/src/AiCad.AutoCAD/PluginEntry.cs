@@ -16,6 +16,8 @@ public sealed class PluginEntry : IExtensionApplication
     private readonly AutoCadContextReader _contextReader = new();
     private readonly AutoCadPlanExecutor _planExecutor = new();
     private readonly DrawingEvidenceReader _evidenceReader = new();
+    private readonly Drawing2dExecutor _drawing2d = new();
+    private readonly Drawing2dServices _drawing2dServices = new();
     private PipeServerHost? _pipeServer;
     private string? _sessionToken;
     private string? _descriptorPath;
@@ -110,6 +112,10 @@ public sealed class PluginEntry : IExtensionApplication
                     Assembly.GetExecutingAssembly().GetName().Version?.ToString() ?? "unknown",
                     Environment.ProcessId)),
             "get_context" => ReadContext(request.MessageId),
+            "draw_2d" => Handle2d<Drawing2dPlan, CreateResult>(request, _drawing2d.ExecuteCreate),
+            "get_layers" => Handle2d<DrawingEvidenceRequest, DrawingEvidencePage<LayerEvidence>>(request, _drawing2dServices.ReadLayers),
+            "get_geometry" => Handle2d<GeometryReadRequest, GeometryReadResult>(request, _drawing2dServices.ReadGeometry),
+            "save_drawing" => Handle2d<SaveDrawingRequest, SaveDrawingResult>(request, _drawing2dServices.Save),
             "get_layouts" => ReadEvidence(request, _evidenceReader.ReadLayouts),
             "get_entities" => ReadEvidence(request, _evidenceReader.ReadEntities),
             "get_dimensions" => ReadEvidence(request, _evidenceReader.ReadDimensions),
@@ -162,6 +168,24 @@ public sealed class PluginEntry : IExtensionApplication
         {
             return Error(request.MessageId, "EVIDENCE_READ_FAILED", exception.Message);
         }
+    }
+
+    private CadRpcResponse Handle2d<TRequest, TResult>(CadRpcRequest request,
+        Func<Autodesk.AutoCAD.ApplicationServices.Document, TRequest, TResult> action)
+    {
+        var document = Application.DocumentManager.MdiActiveDocument;
+        if (document is null) return Error(request.MessageId, "NO_DOCUMENT", "Open a new drawing before using this tool.");
+        try
+        {
+            var input = request.Payload.Deserialize<TRequest>(Drawing2dPlan.JsonOptions);
+            if (input is null) return Error(request.MessageId, "INVALID_PLAN", "A request payload is required.");
+            return Success(request.MessageId, action(document, input));
+        }
+        catch (Drawing2dException error) { return Error(request.MessageId, error.Code, error.Message); }
+        catch (PlanValidationException error)
+        { return Error(request.MessageId, "INVALID_PLAN", string.Join("; ", error.Errors.Select(e => $"{e.Path}: {e.Message}"))); }
+        catch (JsonException error) { return Error(request.MessageId, "INVALID_JSON", error.Message); }
+        catch (Autodesk.AutoCAD.Runtime.Exception error) { return Error(request.MessageId, "GEOMETRY_FAILED", error.Message); }
     }
 
     private CadRpcResponse ReadContext(Guid messageId)
@@ -386,6 +410,10 @@ public sealed class PluginEntry : IExtensionApplication
             return Success(
                 request.MessageId,
                 _planExecutor.UndoBatch(document, undoRequest.BatchId));
+        }
+        catch (Drawing2dException exception)
+        {
+            return Error(request.MessageId, exception.Code, exception.Message);
         }
         catch (CadOperationException exception)
         {

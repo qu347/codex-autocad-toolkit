@@ -1,54 +1,67 @@
-# 接入 Codex 和 AutoCAD
+# 安装与连接
 
-## 从 GitHub 下载
+## 1. 准备软件
+
+Windows x64、已安装并能正常打开的 AutoCAD 2026（R25.1）、.NET 8 x64 Runtime。使用源码构建时再安装 .NET 8 SDK。演示推荐新建 acadiso.dwt 公制图纸。
+
+## 2. 安装 MCP 和 Skills
+
+完整解压教学安装包，在工具包根目录的 PowerShell 运行：
 
 ```powershell
-git clone https://github.com/qu347/codex-autocad-toolkit.git
-cd codex-autocad-toolkit
+powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\install-package.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\install-skills.ps1
 ```
 
-没有 Git 时用仓库页面 Code → Download ZIP，完整解压到独立文件夹。在 Codex 中打开此文件夹，提交 `prompts/start-here.txt` 的内容。
+更新插件前关闭 AutoCAD；脚本不自动关闭图纸。已有插件备份到同级 `AiCad.bundle.backup-...`。两套新技能安装到 `$CODEX_HOME/skills` 或当前用户 `.codex/skills`，已有同名技能备份到 `skill-backups`。
 
-## 先跑二维教学案例
-
-需要 Windows AutoCAD。默认案例已在 AutoCAD 2026 验证。
-打开新空白图纸，在命令行运行 APPLOAD，加载 `examples/stepped-flange/flange_demo.lsp`。
-依次运行 CADOUTLINE、CADHOLES、CADDIMS，检查结果再另存为自己的 DWG。
-参考图和默认参数验证结果位于同一目录。此路线不依赖 MCP 插件或 .NET SDK。
-
-## 接入 MCP 插件
-
-前提为 Windows、AutoCAD 2026 与 .NET 8 SDK。仓库不附带 AutoCAD 软件或授权。
-在 PowerShell 中按实际安装位置设置路径；常规安装位置可省略环境变量：
+如果下载的是 Git 源码而非编译包，先设置实际 AutoCAD 路径并构建安装：
 
 ```powershell
-$env:AUTOCAD_PATH = 'C:\Program Files\Autodesk\AutoCAD 2026'
+$env:AUTOCAD_PATH = 'D:\cad\AutoCAD 2026' # 替换为自己的安装路径
 powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\install-user.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\install-skills.ps1
 ```
 
-安装脚本会构建、运行测试并验证插件包，安装到当前用户的 Autodesk ApplicationPlugins；已有插件会先备份。
-重启 AutoCAD，新建图纸并运行 AICADSTATUS，确认出现 AICAD_READY。
+源码安装包含测试和发布包检查，源码输出留在本工具包目录。
 
-在 Codex 的 MCP 服务配置中添加 STDIO 服务，可执行文件使用安装脚本输出的 `AiCad.Bridge.exe` 完整路径。
-配置样例在 `plugin/scripts/codex-mcp.example.toml`。只合并本项目配置，替换 `<USER>`，保留已有 MCP 配置。
-连接后让 Codex 先调用 cad_health、cad_get_context；实际调用成功后再绘图。
+## 3. 连接 Codex
 
-可使用以下任务验证圆角四孔底板：
+插件路径为 `%APPDATA%\Autodesk\ApplicationPlugins\AiCad.bundle`。启动/重启 AutoCAD，打开公制新图，命令行运行 `AICADSTATUS`，应出现 `AICAD_READY`。
+
+MCP 配置使用 STDIO，command 填安装脚本输出的 `Contents\Bridge\AiCad.Bridge.exe` 完整路径，服务名 `ai_cad`。参考 [配置样例](../plugin/scripts/codex-mcp.example.toml)，替换 `<USER>`，只合并这个服务，保留其他设置。若此前已注册同路径服务，刷新该服务即可。新 Skills 需要刷新技能列表或新开会话才能发现。
+
+样例把创建、读取和新文件保存设为 approve，修改已有图形和撤销仍为 prompt。实际授权与客户端策略优先。字段依据 [官方 Codex MCP 文档](https://learn.chatgpt.com/docs/extend/mcp?surface=cli)。
+
+发给 Codex：
 
 ```text
-创建100×60×10 mm圆角底板，圆角R5，四个直径8的通孔，孔中心距两边各10 mm，生成三维实体、三视图和尺寸。
+使用 $autocad-mcp-drawing。先实际调用 cad_health、cad_get_context、cad_get_layers，告诉我当前图纸与单位，检查是否有 cad_draw_2d、cad_get_geometry、cad_save_drawing。连接成功后先等待我给绘图尺寸。
 ```
 
-插件当前直接支持圆角矩形四孔底板及其孔径修改。读取工具支持图层/实体信息、布局、尺寸、文字表格和块证据；不是任意图形建模接口。
-修改孔径和撤销按插件的提议与确认机制执行。
+health 插件版本应为 1.1.0.0；完整工具列表有17项。只加载 Skills 不会升级 Native 插件；只刷新 Codex 不会升级 AutoCAD 中已加载的 DLL。教学时保持一个目标 AutoCAD 实例、命令行空闲。
 
-## 自检
+## 4. 录制复杂图形教学
+
+把 [案例提示词](../examples/mcp-stepped-flange/prompts.txt) 按阶段发给 Codex。阶段模板中的空指纹必须替换为当次 context，固定演示 GUID 必须换成新意图的 GUID；重试则保留当次原计划和 GUID。
+
+默认参数为220×160，20处R8，中央Ø60，Ø90节圆上6×Ø10，4×Ø9，两处30×12长圆槽。完成后读取实际几何/measurement，再保存到新的绝对路径。参考成图可直接打开 [flange_mcp.dwg](../examples/mcp-stepped-flange/flange_mcp.dwg)。
+
+视图缩放由演示者操作，保持画面可见。尺寸为原生 DIMENSION，但不是关联轮廓句柄的全自动更新尺寸；改轮廓后同步复核标注。
+
+## 5. 本机复测
 
 ```powershell
+$env:AUTOCAD_PATH = 'D:\cad\AutoCAD 2026'
 powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\build.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\tests\AutoCAD.Integration\run-status.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\tests\AutoCAD.Integration\run-core-console.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\tests\AutoCAD.Integration\run-pipe.ps1
+python .\plugin\tests\AutoCAD.Integration\run-mcp-2d.py --template '你的acadiso.dwt绝对路径' --stages .\examples\mcp-stepped-flange --output .\plugin\TestResults\my-new-test
 ```
 
-测试只在工具包的 TestResults 中创建测试图纸和加载本地插件，不修改软件安装目录。详见 `docs/verification.md`。
+测试输出目录需不存在。独立DXF校核/渲染需要 Python 的 ezdxf 和 matplotlib：
+
+```powershell
+python -m pip install ezdxf matplotlib
+python .\examples\mcp-stepped-flange\verify-dxf.py .\examples\mcp-stepped-flange\flange_mcp.dxf --preview .\examples\mcp-stepped-flange\preview.png --report .\examples\mcp-stepped-flange\verification.json
+```
+
+早期独立 LSP 路线仍在 `examples/stepped-flange/`：新图 APPLOAD 加载 flange_demo.lsp，再依次运行 CADOUTLINE/CADHOLES/CADDIMS。

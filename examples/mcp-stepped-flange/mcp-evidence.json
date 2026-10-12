@@ -1,0 +1,2841 @@
+{
+  "tools": [
+    "cad_apply_change",
+    "cad_cancel_change",
+    "cad_create_rounded_plate",
+    "cad_draw_2d",
+    "cad_get_blocks",
+    "cad_get_context",
+    "cad_get_dimensions",
+    "cad_get_entities",
+    "cad_get_geometry",
+    "cad_get_layers",
+    "cad_get_layouts",
+    "cad_get_request_status",
+    "cad_get_text_and_tables",
+    "cad_health",
+    "cad_propose_hole_diameter_change",
+    "cad_save_drawing",
+    "cad_undo_batch"
+  ],
+  "health": {
+    "protocolVersion": "1.0",
+    "pluginVersion": "1.1.0.0",
+    "autoCadProcessId": 14528
+  },
+  "created": {
+    "success": true,
+    "batchId": "73e5da7c8db443c9b40515fb07980636",
+    "handles": {
+      "width": "355",
+      "height": "364",
+      "step-x-1": "371",
+      "step-x-2": "37E",
+      "step-x-3": "38B",
+      "step-x-4": "398",
+      "step-x-5": "3A5",
+      "step-y-1": "3B2",
+      "step-y-2": "3BF",
+      "step-y-3": "3CC",
+      "step-y-4": "3D9",
+      "step-y-5": "3E6",
+      "mount-offset-x": "3F3",
+      "mount-spacing-x": "400",
+      "mount-offset-y": "40D",
+      "mount-spacing-y": "41A",
+      "slot-position-x": "427",
+      "slot-position-y": "434",
+      "slot-length": "441",
+      "slot-width": "44E",
+      "bore-diameter": "45B",
+      "pitch-diameter": "464",
+      "bolt-diameter": "470",
+      "mount-diameter": "47C",
+      "corner-radius": "488"
+    },
+    "warnings": [],
+    "elapsedMilliseconds": 34
+  },
+  "duplicate": {
+    "success": true,
+    "batchId": "73e5da7c8db443c9b40515fb07980636",
+    "handles": {
+      "width": "355",
+      "height": "364",
+      "step-x-1": "371",
+      "step-x-2": "37E",
+      "step-x-3": "38B",
+      "step-x-4": "398",
+      "step-x-5": "3A5",
+      "step-y-1": "3B2",
+      "step-y-2": "3BF",
+      "step-y-3": "3CC",
+      "step-y-4": "3D9",
+      "step-y-5": "3E6",
+      "mount-offset-x": "3F3",
+      "mount-spacing-x": "400",
+      "mount-offset-y": "40D",
+      "mount-spacing-y": "41A",
+      "slot-position-x": "427",
+      "slot-position-y": "434",
+      "slot-length": "441",
+      "slot-width": "44E",
+      "bore-diameter": "45B",
+      "pitch-diameter": "464",
+      "bolt-diameter": "470",
+      "mount-diameter": "47C",
+      "corner-radius": "488"
+    },
+    "warnings": [],
+    "elapsedMilliseconds": 0
+  },
+  "geometry": {
+    "items": [
+      {
+        "handle": "2CF",
+        "entityType": "Polyline",
+        "layer": "OUTLINE",
+        "data": {
+          "closed": true,
+          "elevation": 0,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "vertices": [
+            {
+              "x": 0,
+              "y": 58,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 8,
+              "y": 50,
+              "bulge": 0
+            },
+            {
+              "x": 17,
+              "y": 50,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 25,
+              "y": 42,
+              "bulge": 0
+            },
+            {
+              "x": 25,
+              "y": 28,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 33,
+              "y": 20,
+              "bulge": 0
+            },
+            {
+              "x": 47,
+              "y": 20,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 55,
+              "y": 12,
+              "bulge": 0
+            },
+            {
+              "x": 55,
+              "y": 8,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 63,
+              "y": 0,
+              "bulge": 0
+            },
+            {
+              "x": 157,
+              "y": 0,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 165,
+              "y": 8,
+              "bulge": 0
+            },
+            {
+              "x": 165,
+              "y": 12,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 173,
+              "y": 20,
+              "bulge": 0
+            },
+            {
+              "x": 187,
+              "y": 20,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 195,
+              "y": 28,
+              "bulge": 0
+            },
+            {
+              "x": 195,
+              "y": 42,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 203,
+              "y": 50,
+              "bulge": 0
+            },
+            {
+              "x": 212,
+              "y": 50,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 220,
+              "y": 58,
+              "bulge": 0
+            },
+            {
+              "x": 220,
+              "y": 102,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 212,
+              "y": 110,
+              "bulge": 0
+            },
+            {
+              "x": 203,
+              "y": 110,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 195,
+              "y": 118,
+              "bulge": 0
+            },
+            {
+              "x": 195,
+              "y": 132,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 187,
+              "y": 140,
+              "bulge": 0
+            },
+            {
+              "x": 173,
+              "y": 140,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 165,
+              "y": 148,
+              "bulge": 0
+            },
+            {
+              "x": 165,
+              "y": 152,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 157,
+              "y": 160,
+              "bulge": 0
+            },
+            {
+              "x": 63,
+              "y": 160,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 55,
+              "y": 152,
+              "bulge": 0
+            },
+            {
+              "x": 55,
+              "y": 148,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 47,
+              "y": 140,
+              "bulge": 0
+            },
+            {
+              "x": 33,
+              "y": 140,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 25,
+              "y": 132,
+              "bulge": 0
+            },
+            {
+              "x": 25,
+              "y": 118,
+              "bulge": -0.41421356237309503
+            },
+            {
+              "x": 17,
+              "y": 110,
+              "bulge": 0
+            },
+            {
+              "x": 8,
+              "y": 110,
+              "bulge": 0.41421356237309503
+            },
+            {
+              "x": 0,
+              "y": 102,
+              "bulge": 0
+            }
+          ]
+        }
+      },
+      {
+        "handle": "2D9",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 110,
+            "y": 80,
+            "z": 0
+          },
+          "radius": 30,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2DA",
+        "entityType": "Circle",
+        "layer": "CENTER",
+        "data": {
+          "center": {
+            "x": 110,
+            "y": 80,
+            "z": 0
+          },
+          "radius": 45,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2DB",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": -5,
+            "y": 80,
+            "z": 0
+          },
+          "end": {
+            "x": 225,
+            "y": 80,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2DC",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 110,
+            "y": -5,
+            "z": 0
+          },
+          "end": {
+            "x": 110,
+            "y": 165,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2DD",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 155,
+            "y": 80,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2DE",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 148,
+            "y": 80,
+            "z": 0
+          },
+          "end": {
+            "x": 162,
+            "y": 80,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2DF",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 155,
+            "y": 73,
+            "z": 0
+          },
+          "end": {
+            "x": 155,
+            "y": 87,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E0",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 132.5,
+            "y": 118.9711431703,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2E1",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 125.5,
+            "y": 118.9711431703,
+            "z": 0
+          },
+          "end": {
+            "x": 139.5,
+            "y": 118.9711431703,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E2",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 132.5,
+            "y": 111.9711431703,
+            "z": 0
+          },
+          "end": {
+            "x": 132.5,
+            "y": 125.9711431703,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E3",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 87.5,
+            "y": 118.9711431703,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2E4",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 80.5,
+            "y": 118.9711431703,
+            "z": 0
+          },
+          "end": {
+            "x": 94.5,
+            "y": 118.9711431703,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E5",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 87.5,
+            "y": 111.9711431703,
+            "z": 0
+          },
+          "end": {
+            "x": 87.5,
+            "y": 125.9711431703,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E6",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 65,
+            "y": 80,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2E7",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 58,
+            "y": 80,
+            "z": 0
+          },
+          "end": {
+            "x": 72,
+            "y": 80,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E8",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 65,
+            "y": 73,
+            "z": 0
+          },
+          "end": {
+            "x": 65,
+            "y": 87,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2E9",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 87.5,
+            "y": 41.0288568297,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2EA",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 80.5,
+            "y": 41.0288568297,
+            "z": 0
+          },
+          "end": {
+            "x": 94.5,
+            "y": 41.0288568297,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2EB",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 87.5,
+            "y": 34.0288568297,
+            "z": 0
+          },
+          "end": {
+            "x": 87.5,
+            "y": 48.0288568297,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2EC",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 132.5,
+            "y": 41.0288568297,
+            "z": 0
+          },
+          "radius": 5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2ED",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 125.5,
+            "y": 41.0288568297,
+            "z": 0
+          },
+          "end": {
+            "x": 139.5,
+            "y": 41.0288568297,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2EE",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 132.5,
+            "y": 34.0288568297,
+            "z": 0
+          },
+          "end": {
+            "x": 132.5,
+            "y": 48.0288568297,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2EF",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 45,
+            "y": 40,
+            "z": 0
+          },
+          "radius": 4.5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2F0",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 38.5,
+            "y": 40,
+            "z": 0
+          },
+          "end": {
+            "x": 51.5,
+            "y": 40,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F1",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 45,
+            "y": 33.5,
+            "z": 0
+          },
+          "end": {
+            "x": 45,
+            "y": 46.5,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F2",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 175,
+            "y": 40,
+            "z": 0
+          },
+          "radius": 4.5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2F3",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 168.5,
+            "y": 40,
+            "z": 0
+          },
+          "end": {
+            "x": 181.5,
+            "y": 40,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F4",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 175,
+            "y": 33.5,
+            "z": 0
+          },
+          "end": {
+            "x": 175,
+            "y": 46.5,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F5",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 45,
+            "y": 120,
+            "z": 0
+          },
+          "radius": 4.5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2F6",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 38.5,
+            "y": 120,
+            "z": 0
+          },
+          "end": {
+            "x": 51.5,
+            "y": 120,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F7",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 45,
+            "y": 113.5,
+            "z": 0
+          },
+          "end": {
+            "x": 45,
+            "y": 126.5,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2F8",
+        "entityType": "Circle",
+        "layer": "HOLE",
+        "data": {
+          "center": {
+            "x": 175,
+            "y": 120,
+            "z": 0
+          },
+          "radius": 4.5,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          }
+        }
+      },
+      {
+        "handle": "2F9",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 168.5,
+            "y": 120,
+            "z": 0
+          },
+          "end": {
+            "x": 181.5,
+            "y": 120,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2FA",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 175,
+            "y": 113.5,
+            "z": 0
+          },
+          "end": {
+            "x": 175,
+            "y": 126.5,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2FB",
+        "entityType": "Polyline",
+        "layer": "HOLE",
+        "data": {
+          "closed": true,
+          "elevation": 0,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "vertices": [
+            {
+              "x": 16,
+              "y": 74,
+              "bulge": 0
+            },
+            {
+              "x": 34,
+              "y": 74,
+              "bulge": 1
+            },
+            {
+              "x": 34,
+              "y": 86,
+              "bulge": 0
+            },
+            {
+              "x": 16,
+              "y": 86,
+              "bulge": 1
+            }
+          ]
+        }
+      },
+      {
+        "handle": "2FC",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 7,
+            "y": 80,
+            "z": 0
+          },
+          "end": {
+            "x": 43,
+            "y": 80,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2FD",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 25,
+            "y": 62,
+            "z": 0
+          },
+          "end": {
+            "x": 25,
+            "y": 98,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "2FE",
+        "entityType": "Polyline",
+        "layer": "HOLE",
+        "data": {
+          "closed": true,
+          "elevation": 0,
+          "normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "vertices": [
+            {
+              "x": 186,
+              "y": 74,
+              "bulge": 0
+            },
+            {
+              "x": 204,
+              "y": 74,
+              "bulge": 1
+            },
+            {
+              "x": 204,
+              "y": 86,
+              "bulge": 0
+            },
+            {
+              "x": 186,
+              "y": 86,
+              "bulge": 1
+            }
+          ]
+        }
+      },
+      {
+        "handle": "2FF",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 177,
+            "y": 80,
+            "z": 0
+          },
+          "end": {
+            "x": 213,
+            "y": 80,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "300",
+        "entityType": "Line",
+        "layer": "CENTER",
+        "data": {
+          "start": {
+            "x": 195,
+            "y": 62,
+            "z": 0
+          },
+          "end": {
+            "x": 195,
+            "y": 98,
+            "z": 0
+          }
+        }
+      },
+      {
+        "handle": "355",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 220,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 110,
+            "y": -47.565202231520225,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "364",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 160.00000000000003,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 267.5554393305441,
+            "y": 79.99999999999997,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "371",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 25,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 12.500000000000004,
+            "y": 185.43479776847977,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "37E",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 30,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 40,
+            "y": 185.43479776847977,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "38B",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 110,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 110,
+            "y": 185.44456066945605,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "398",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 30,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 180,
+            "y": 185.43479776847977,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3A5",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 25,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 207.5,
+            "y": 185.43479776847977,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3B2",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 20.000000000000007,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -27.434797768479793,
+            "y": 9.999999999999998,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3BF",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 30.000000000000018,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -27.434797768479786,
+            "y": 35.00000000000001,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3CC",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 60.000000000000014,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -27.434797768479775,
+            "y": 80.00000000000003,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3D9",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 30,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -27.43479776847976,
+            "y": 125.00000000000003,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3E6",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 20,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -27.434797768479754,
+            "y": 150.00000000000003,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "3F3",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 45,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 22.499999999999996,
+            "y": -14.594490934449095,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "400",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 130,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 110,
+            "y": -14.555439330543933,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "40D",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 40.000000000000014,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -47.43479776847979,
+            "y": 20.000000000000004,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "41A",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 80.00000000000001,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -47.43479776847977,
+            "y": 80.00000000000001,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "427",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 25,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 12.499999999999995,
+            "y": -30.565202231520225,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "434",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 80.00000000000003,
+          "dimensionText": "",
+          "textPosition": {
+            "x": -67.43479776847981,
+            "y": 40.000000000000014,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "441",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 30,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 25,
+            "y": 101.43479776847978,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "44E",
+        "entityType": "RotatedDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 12,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 49.585948396094906,
+            "y": 80.00000000000001,
+            "z": 0
+          },
+          "dimensionType": "RotatedDimension"
+        }
+      },
+      {
+        "handle": "45B",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 60.00000000000009,
+          "dimensionText": "",
+          "textPosition": {
+            "x": 102.99999999999984,
+            "y": 87.99999999999987,
+            "z": 0
+          },
+          "dimensionType": "DiametricDimension"
+        }
+      },
+      {
+        "handle": "464",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 90.00000000000003,
+          "dimensionText": "PCD <>",
+          "textPosition": {
+            "x": 237.99999999999974,
+            "y": 33.41181001389913,
+            "z": 0
+          },
+          "dimensionType": "DiametricDimension"
+        }
+      },
+      {
+        "handle": "470",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 9.99999999999983,
+          "dimensionText": "6X <>",
+          "textPosition": {
+            "x": 237.99999999999943,
+            "y": 146.00000000000256,
+            "z": 0
+          },
+          "dimensionType": "DiametricDimension"
+        }
+      },
+      {
+        "handle": "47C",
+        "entityType": "DiametricDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 9,
+          "dimensionText": "4X <>",
+          "textPosition": {
+            "x": 238,
+            "y": 120,
+            "z": 0
+          },
+          "dimensionType": "DiametricDimension"
+        }
+      },
+      {
+        "handle": "488",
+        "entityType": "RadialDimension",
+        "layer": "DIM",
+        "data": {
+          "measurement": 7.99999999999946,
+          "dimensionText": "20X <>",
+          "textPosition": {
+            "x": -11.999999999999993,
+            "y": 122,
+            "z": 0
+          },
+          "dimensionType": "RadialDimension"
+        }
+      }
+    ],
+    "documentFingerprint": "0105fcfd6fac688befd169895cd81ea87426ed28aec3509b2ecf97ccf4df84e6"
+  },
+  "layers": {
+    "items": [
+      {
+        "name": "0",
+        "color": 7,
+        "lineType": "Continuous",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      },
+      {
+        "name": "CENTER",
+        "color": 8,
+        "lineType": "CENTER",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      },
+      {
+        "name": "DIM",
+        "color": 3,
+        "lineType": "Continuous",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      },
+      {
+        "name": "Defpoints",
+        "color": 7,
+        "lineType": "Continuous",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      },
+      {
+        "name": "HOLE",
+        "color": 7,
+        "lineType": "Continuous",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      },
+      {
+        "name": "OUTLINE",
+        "color": 7,
+        "lineType": "Continuous",
+        "isLocked": false,
+        "isOff": false,
+        "isFrozen": false
+      }
+    ],
+    "totalCount": 6,
+    "documentFingerprint": "0105fcfd6fac688befd169895cd81ea87426ed28aec3509b2ecf97ccf4df84e6"
+  },
+  "saved": {
+    "success": true,
+    "files": [
+      {
+        "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-10\\ai-agent-ai-ai-a-1\\outputs\\codex-autocad-toolkit\\plugin\\TestResults\\mcp-delivery110\\mcp2d.dwg",
+        "bytes": 59017
+      },
+      {
+        "path": "C:\\Users\\admin\\Documents\\Codex\\2026-10-10\\ai-agent-ai-ai-a-1\\outputs\\codex-autocad-toolkit\\plugin\\TestResults\\mcp-delivery110\\mcp2d.dxf",
+        "bytes": 260208
+      }
+    ],
+    "documentFingerprint": "2cd40290e63e6562f9f590c0656d3f5ceb419fec6ebbf04acdb0499bb1cf53d8"
+  },
+  "stageResults": [
+    {
+      "stage": "01-outline.json",
+      "plan": {
+        "schemaVersion": "2d-1.0",
+        "requestId": "8a38f163-b417-4450-909f-53e28f6991da",
+        "documentFingerprint": "9c9d5953f43d08b2763d89c6d8cb8ab93288578328e0db9b4ce7835195f308bb",
+        "unit": "millimeter",
+        "layers": [
+          {
+            "name": "OUTLINE",
+            "color": 7,
+            "lineType": "Continuous"
+          }
+        ],
+        "entities": [
+          {
+            "type": "polyline",
+            "id": "flange-outline",
+            "layer": "OUTLINE",
+            "closed": true,
+            "vertices": [
+              {
+                "x": 0.0,
+                "y": 58.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 8.0,
+                "y": 50.0,
+                "bulge": 0
+              },
+              {
+                "x": 17.0,
+                "y": 50.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 25.0,
+                "y": 42.0,
+                "bulge": 0
+              },
+              {
+                "x": 25.0,
+                "y": 28.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 33.0,
+                "y": 20.0,
+                "bulge": 0
+              },
+              {
+                "x": 47.0,
+                "y": 20.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 55.0,
+                "y": 12.0,
+                "bulge": 0
+              },
+              {
+                "x": 55.0,
+                "y": 8.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 63.0,
+                "y": 0.0,
+                "bulge": 0
+              },
+              {
+                "x": 157.0,
+                "y": 0.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 165.0,
+                "y": 8.0,
+                "bulge": 0
+              },
+              {
+                "x": 165.0,
+                "y": 12.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 173.0,
+                "y": 20.0,
+                "bulge": 0
+              },
+              {
+                "x": 187.0,
+                "y": 20.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 195.0,
+                "y": 28.0,
+                "bulge": 0
+              },
+              {
+                "x": 195.0,
+                "y": 42.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 203.0,
+                "y": 50.0,
+                "bulge": 0
+              },
+              {
+                "x": 212.0,
+                "y": 50.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 220.0,
+                "y": 58.0,
+                "bulge": 0
+              },
+              {
+                "x": 220.0,
+                "y": 102.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 212.0,
+                "y": 110.0,
+                "bulge": 0
+              },
+              {
+                "x": 203.0,
+                "y": 110.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 195.0,
+                "y": 118.0,
+                "bulge": 0
+              },
+              {
+                "x": 195.0,
+                "y": 132.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 187.0,
+                "y": 140.0,
+                "bulge": 0
+              },
+              {
+                "x": 173.0,
+                "y": 140.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 165.0,
+                "y": 148.0,
+                "bulge": 0
+              },
+              {
+                "x": 165.0,
+                "y": 152.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 157.0,
+                "y": 160.0,
+                "bulge": 0
+              },
+              {
+                "x": 63.0,
+                "y": 160.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 55.0,
+                "y": 152.0,
+                "bulge": 0
+              },
+              {
+                "x": 55.0,
+                "y": 148.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 47.0,
+                "y": 140.0,
+                "bulge": 0
+              },
+              {
+                "x": 33.0,
+                "y": 140.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 25.0,
+                "y": 132.0,
+                "bulge": 0
+              },
+              {
+                "x": 25.0,
+                "y": 118.0,
+                "bulge": -0.41421356237309503
+              },
+              {
+                "x": 17.0,
+                "y": 110.0,
+                "bulge": 0
+              },
+              {
+                "x": 8.0,
+                "y": 110.0,
+                "bulge": 0.41421356237309503
+              },
+              {
+                "x": 0.0,
+                "y": 102.0,
+                "bulge": 0
+              }
+            ]
+          }
+        ]
+      },
+      "result": {
+        "success": true,
+        "batchId": "6cffb2dd229243edb484f3f8cf815ec1",
+        "handles": {
+          "flange-outline": "2CF"
+        },
+        "warnings": [],
+        "elapsedMilliseconds": 33
+      }
+    },
+    {
+      "stage": "02-holes.json",
+      "plan": {
+        "schemaVersion": "2d-1.0",
+        "requestId": "ef2471e4-43aa-4812-a9eb-8cffd6e8d3af",
+        "documentFingerprint": "b70d747398ba7f3a290b49f54603b1056734d4461ab44f1bcd0ff0c0f1398852",
+        "unit": "millimeter",
+        "layers": [
+          {
+            "name": "HOLE",
+            "color": 7,
+            "lineType": "Continuous"
+          },
+          {
+            "name": "CENTER",
+            "color": 8,
+            "lineType": "CENTER"
+          }
+        ],
+        "entities": [
+          {
+            "type": "circle",
+            "id": "bore",
+            "layer": "HOLE",
+            "center": {
+              "x": 110,
+              "y": 80
+            },
+            "radius": 30
+          },
+          {
+            "type": "circle",
+            "id": "pitch-circle",
+            "layer": "CENTER",
+            "center": {
+              "x": 110,
+              "y": 80
+            },
+            "radius": 45
+          },
+          {
+            "type": "line",
+            "id": "axis-x",
+            "layer": "CENTER",
+            "start": {
+              "x": -5,
+              "y": 80
+            },
+            "end": {
+              "x": 225,
+              "y": 80
+            }
+          },
+          {
+            "type": "line",
+            "id": "axis-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 110,
+              "y": -5
+            },
+            "end": {
+              "x": 110,
+              "y": 165
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-1",
+            "layer": "HOLE",
+            "center": {
+              "x": 155.0,
+              "y": 80.0
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-1-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 148.0,
+              "y": 80.0
+            },
+            "end": {
+              "x": 162.0,
+              "y": 80.0
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-1-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 155.0,
+              "y": 73.0
+            },
+            "end": {
+              "x": 155.0,
+              "y": 87.0
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-2",
+            "layer": "HOLE",
+            "center": {
+              "x": 132.5,
+              "y": 118.9711431703
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-2-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 125.5,
+              "y": 118.9711431703
+            },
+            "end": {
+              "x": 139.5,
+              "y": 118.9711431703
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-2-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 132.5,
+              "y": 111.9711431703
+            },
+            "end": {
+              "x": 132.5,
+              "y": 125.9711431703
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-3",
+            "layer": "HOLE",
+            "center": {
+              "x": 87.5,
+              "y": 118.9711431703
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-3-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 80.5,
+              "y": 118.9711431703
+            },
+            "end": {
+              "x": 94.5,
+              "y": 118.9711431703
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-3-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 87.5,
+              "y": 111.9711431703
+            },
+            "end": {
+              "x": 87.5,
+              "y": 125.9711431703
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-4",
+            "layer": "HOLE",
+            "center": {
+              "x": 65.0,
+              "y": 80.0
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-4-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 58.0,
+              "y": 80.0
+            },
+            "end": {
+              "x": 72.0,
+              "y": 80.0
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-4-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 65.0,
+              "y": 73.0
+            },
+            "end": {
+              "x": 65.0,
+              "y": 87.0
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-5",
+            "layer": "HOLE",
+            "center": {
+              "x": 87.5,
+              "y": 41.0288568297
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-5-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 80.5,
+              "y": 41.0288568297
+            },
+            "end": {
+              "x": 94.5,
+              "y": 41.0288568297
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-5-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 87.5,
+              "y": 34.0288568297
+            },
+            "end": {
+              "x": 87.5,
+              "y": 48.0288568297
+            }
+          },
+          {
+            "type": "circle",
+            "id": "bolt-6",
+            "layer": "HOLE",
+            "center": {
+              "x": 132.5,
+              "y": 41.0288568297
+            },
+            "radius": 5
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-6-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 125.5,
+              "y": 41.0288568297
+            },
+            "end": {
+              "x": 139.5,
+              "y": 41.0288568297
+            }
+          },
+          {
+            "type": "line",
+            "id": "bolt-center-6-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 132.5,
+              "y": 34.0288568297
+            },
+            "end": {
+              "x": 132.5,
+              "y": 48.0288568297
+            }
+          },
+          {
+            "type": "circle",
+            "id": "mount-1",
+            "layer": "HOLE",
+            "center": {
+              "x": 45,
+              "y": 40
+            },
+            "radius": 4.5
+          },
+          {
+            "type": "line",
+            "id": "mount-center-1-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 38.5,
+              "y": 40
+            },
+            "end": {
+              "x": 51.5,
+              "y": 40
+            }
+          },
+          {
+            "type": "line",
+            "id": "mount-center-1-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 45,
+              "y": 33.5
+            },
+            "end": {
+              "x": 45,
+              "y": 46.5
+            }
+          },
+          {
+            "type": "circle",
+            "id": "mount-2",
+            "layer": "HOLE",
+            "center": {
+              "x": 175,
+              "y": 40
+            },
+            "radius": 4.5
+          },
+          {
+            "type": "line",
+            "id": "mount-center-2-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 168.5,
+              "y": 40
+            },
+            "end": {
+              "x": 181.5,
+              "y": 40
+            }
+          },
+          {
+            "type": "line",
+            "id": "mount-center-2-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 175,
+              "y": 33.5
+            },
+            "end": {
+              "x": 175,
+              "y": 46.5
+            }
+          },
+          {
+            "type": "circle",
+            "id": "mount-3",
+            "layer": "HOLE",
+            "center": {
+              "x": 45,
+              "y": 120
+            },
+            "radius": 4.5
+          },
+          {
+            "type": "line",
+            "id": "mount-center-3-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 38.5,
+              "y": 120
+            },
+            "end": {
+              "x": 51.5,
+              "y": 120
+            }
+          },
+          {
+            "type": "line",
+            "id": "mount-center-3-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 45,
+              "y": 113.5
+            },
+            "end": {
+              "x": 45,
+              "y": 126.5
+            }
+          },
+          {
+            "type": "circle",
+            "id": "mount-4",
+            "layer": "HOLE",
+            "center": {
+              "x": 175,
+              "y": 120
+            },
+            "radius": 4.5
+          },
+          {
+            "type": "line",
+            "id": "mount-center-4-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 168.5,
+              "y": 120
+            },
+            "end": {
+              "x": 181.5,
+              "y": 120
+            }
+          },
+          {
+            "type": "line",
+            "id": "mount-center-4-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 175,
+              "y": 113.5
+            },
+            "end": {
+              "x": 175,
+              "y": 126.5
+            }
+          },
+          {
+            "type": "polyline",
+            "id": "slot-1",
+            "layer": "HOLE",
+            "closed": true,
+            "vertices": [
+              {
+                "x": 16,
+                "y": 74,
+                "bulge": 0
+              },
+              {
+                "x": 34,
+                "y": 74,
+                "bulge": 1
+              },
+              {
+                "x": 34,
+                "y": 86,
+                "bulge": 0
+              },
+              {
+                "x": 16,
+                "y": 86,
+                "bulge": 1
+              }
+            ]
+          },
+          {
+            "type": "line",
+            "id": "slot-center-1-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 7,
+              "y": 80
+            },
+            "end": {
+              "x": 43,
+              "y": 80
+            }
+          },
+          {
+            "type": "line",
+            "id": "slot-center-1-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 25,
+              "y": 62
+            },
+            "end": {
+              "x": 25,
+              "y": 98
+            }
+          },
+          {
+            "type": "polyline",
+            "id": "slot-2",
+            "layer": "HOLE",
+            "closed": true,
+            "vertices": [
+              {
+                "x": 186,
+                "y": 74,
+                "bulge": 0
+              },
+              {
+                "x": 204,
+                "y": 74,
+                "bulge": 1
+              },
+              {
+                "x": 204,
+                "y": 86,
+                "bulge": 0
+              },
+              {
+                "x": 186,
+                "y": 86,
+                "bulge": 1
+              }
+            ]
+          },
+          {
+            "type": "line",
+            "id": "slot-center-2-x",
+            "layer": "CENTER",
+            "start": {
+              "x": 177,
+              "y": 80
+            },
+            "end": {
+              "x": 213,
+              "y": 80
+            }
+          },
+          {
+            "type": "line",
+            "id": "slot-center-2-y",
+            "layer": "CENTER",
+            "start": {
+              "x": 195,
+              "y": 62
+            },
+            "end": {
+              "x": 195,
+              "y": 98
+            }
+          }
+        ]
+      },
+      "result": {
+        "success": true,
+        "batchId": "a9ed9d425dd840c299e37adaae7b1945",
+        "handles": {
+          "bore": "2D9",
+          "pitch-circle": "2DA",
+          "axis-x": "2DB",
+          "axis-y": "2DC",
+          "bolt-1": "2DD",
+          "bolt-center-1-x": "2DE",
+          "bolt-center-1-y": "2DF",
+          "bolt-2": "2E0",
+          "bolt-center-2-x": "2E1",
+          "bolt-center-2-y": "2E2",
+          "bolt-3": "2E3",
+          "bolt-center-3-x": "2E4",
+          "bolt-center-3-y": "2E5",
+          "bolt-4": "2E6",
+          "bolt-center-4-x": "2E7",
+          "bolt-center-4-y": "2E8",
+          "bolt-5": "2E9",
+          "bolt-center-5-x": "2EA",
+          "bolt-center-5-y": "2EB",
+          "bolt-6": "2EC",
+          "bolt-center-6-x": "2ED",
+          "bolt-center-6-y": "2EE",
+          "mount-1": "2EF",
+          "mount-center-1-x": "2F0",
+          "mount-center-1-y": "2F1",
+          "mount-2": "2F2",
+          "mount-center-2-x": "2F3",
+          "mount-center-2-y": "2F4",
+          "mount-3": "2F5",
+          "mount-center-3-x": "2F6",
+          "mount-center-3-y": "2F7",
+          "mount-4": "2F8",
+          "mount-center-4-x": "2F9",
+          "mount-center-4-y": "2FA",
+          "slot-1": "2FB",
+          "slot-center-1-x": "2FC",
+          "slot-center-1-y": "2FD",
+          "slot-2": "2FE",
+          "slot-center-2-x": "2FF",
+          "slot-center-2-y": "300"
+        },
+        "warnings": [],
+        "elapsedMilliseconds": 8
+      }
+    },
+    {
+      "stage": "03-dimensions.json",
+      "plan": {
+        "schemaVersion": "2d-1.0",
+        "requestId": "0f298f8b-ba3a-4a9c-bda8-7bb9fbd19e4b",
+        "documentFingerprint": "bd9bd755088f971258ea131e10636b53180db41edcef7c50a1abe34a2a3f81a0",
+        "unit": "millimeter",
+        "layers": [
+          {
+            "name": "DIM",
+            "color": 3,
+            "lineType": "Continuous"
+          }
+        ],
+        "entities": [
+          {
+            "type": "linear_dimension",
+            "id": "width",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 80
+            },
+            "second": {
+              "x": 220,
+              "y": 80
+            },
+            "linePoint": {
+              "x": 110.0,
+              "y": -50
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "height",
+            "layer": "DIM",
+            "first": {
+              "x": 110,
+              "y": 0
+            },
+            "second": {
+              "x": 110,
+              "y": 160
+            },
+            "linePoint": {
+              "x": 270,
+              "y": 80.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-x-1",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 110
+            },
+            "second": {
+              "x": 25,
+              "y": 140
+            },
+            "linePoint": {
+              "x": 12.5,
+              "y": 183
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-x-2",
+            "layer": "DIM",
+            "first": {
+              "x": 25,
+              "y": 140
+            },
+            "second": {
+              "x": 55,
+              "y": 160
+            },
+            "linePoint": {
+              "x": 40.0,
+              "y": 183
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-x-3",
+            "layer": "DIM",
+            "first": {
+              "x": 55,
+              "y": 160
+            },
+            "second": {
+              "x": 165,
+              "y": 160
+            },
+            "linePoint": {
+              "x": 110.0,
+              "y": 183
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-x-4",
+            "layer": "DIM",
+            "first": {
+              "x": 165,
+              "y": 160
+            },
+            "second": {
+              "x": 195,
+              "y": 140
+            },
+            "linePoint": {
+              "x": 180.0,
+              "y": 183
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-x-5",
+            "layer": "DIM",
+            "first": {
+              "x": 195,
+              "y": 140
+            },
+            "second": {
+              "x": 220,
+              "y": 110
+            },
+            "linePoint": {
+              "x": 207.5,
+              "y": 183
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-y-1",
+            "layer": "DIM",
+            "first": {
+              "x": 55,
+              "y": 0
+            },
+            "second": {
+              "x": 25,
+              "y": 20
+            },
+            "linePoint": {
+              "x": -25,
+              "y": 10.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-y-2",
+            "layer": "DIM",
+            "first": {
+              "x": 25,
+              "y": 20
+            },
+            "second": {
+              "x": 0,
+              "y": 50
+            },
+            "linePoint": {
+              "x": -25,
+              "y": 35.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-y-3",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 50
+            },
+            "second": {
+              "x": 0,
+              "y": 110
+            },
+            "linePoint": {
+              "x": -25,
+              "y": 80.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-y-4",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 110
+            },
+            "second": {
+              "x": 25,
+              "y": 140
+            },
+            "linePoint": {
+              "x": -25,
+              "y": 125.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "step-y-5",
+            "layer": "DIM",
+            "first": {
+              "x": 25,
+              "y": 140
+            },
+            "second": {
+              "x": 55,
+              "y": 160
+            },
+            "linePoint": {
+              "x": -25,
+              "y": 150.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "mount-offset-x",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 50
+            },
+            "second": {
+              "x": 45,
+              "y": 40
+            },
+            "linePoint": {
+              "x": 22.5,
+              "y": -17
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "mount-spacing-x",
+            "layer": "DIM",
+            "first": {
+              "x": 45,
+              "y": 40
+            },
+            "second": {
+              "x": 175,
+              "y": 40
+            },
+            "linePoint": {
+              "x": 110.0,
+              "y": -17
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "mount-offset-y",
+            "layer": "DIM",
+            "first": {
+              "x": 55,
+              "y": 0
+            },
+            "second": {
+              "x": 45,
+              "y": 40
+            },
+            "linePoint": {
+              "x": -45,
+              "y": 20.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "mount-spacing-y",
+            "layer": "DIM",
+            "first": {
+              "x": 45,
+              "y": 40
+            },
+            "second": {
+              "x": 45,
+              "y": 120
+            },
+            "linePoint": {
+              "x": -45,
+              "y": 80.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "slot-position-x",
+            "layer": "DIM",
+            "first": {
+              "x": 0,
+              "y": 50
+            },
+            "second": {
+              "x": 25,
+              "y": 80
+            },
+            "linePoint": {
+              "x": 12.5,
+              "y": -33
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "slot-position-y",
+            "layer": "DIM",
+            "first": {
+              "x": 55,
+              "y": 0
+            },
+            "second": {
+              "x": 25,
+              "y": 80
+            },
+            "linePoint": {
+              "x": -65,
+              "y": 40.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "linear_dimension",
+            "id": "slot-length",
+            "layer": "DIM",
+            "first": {
+              "x": 10,
+              "y": 80
+            },
+            "second": {
+              "x": 40,
+              "y": 80
+            },
+            "linePoint": {
+              "x": 25.0,
+              "y": 99
+            },
+            "rotationDegrees": 0
+          },
+          {
+            "type": "linear_dimension",
+            "id": "slot-width",
+            "layer": "DIM",
+            "first": {
+              "x": 25,
+              "y": 74
+            },
+            "second": {
+              "x": 25,
+              "y": 86
+            },
+            "linePoint": {
+              "x": 52,
+              "y": 80.0
+            },
+            "rotationDegrees": 90
+          },
+          {
+            "type": "diameter_dimension",
+            "id": "bore-diameter",
+            "layer": "DIM",
+            "chord": {
+              "x": 90.244861763944,
+              "y": 102.577300841206
+            },
+            "farChord": {
+              "x": 129.755138236056,
+              "y": 57.422699158794
+            },
+            "leaderLength": 10,
+            "prefix": "",
+            "textPosition": {
+              "x": 103,
+              "y": 88
+            }
+          },
+          {
+            "type": "diameter_dimension",
+            "id": "pitch-diameter",
+            "layer": "DIM",
+            "chord": {
+              "x": 152.286167935363,
+              "y": 64.609093550337
+            },
+            "farChord": {
+              "x": 67.713832064637,
+              "y": 95.390906449663
+            },
+            "leaderLength": 10,
+            "prefix": "PCD ",
+            "textPosition": {
+              "x": 238,
+              "y": 33.4118100139
+            }
+          },
+          {
+            "type": "diameter_dimension",
+            "id": "bolt-diameter",
+            "layer": "DIM",
+            "chord": {
+              "x": 137.343566936829,
+              "y": 120.212053855424
+            },
+            "farChord": {
+              "x": 127.656433063171,
+              "y": 117.730232485175
+            },
+            "leaderLength": 10,
+            "prefix": "6X ",
+            "textPosition": {
+              "x": 238,
+              "y": 146
+            }
+          },
+          {
+            "type": "diameter_dimension",
+            "id": "mount-diameter",
+            "layer": "DIM",
+            "chord": {
+              "x": 179.5,
+              "y": 120.0
+            },
+            "farChord": {
+              "x": 170.5,
+              "y": 120.0
+            },
+            "leaderLength": 10,
+            "prefix": "4X ",
+            "textPosition": {
+              "x": 238,
+              "y": 120
+            }
+          },
+          {
+            "type": "radial_dimension",
+            "id": "corner-radius",
+            "layer": "DIM",
+            "center": {
+              "x": 8,
+              "y": 102
+            },
+            "chord": {
+              "x": 2.343145750508,
+              "y": 107.656854249492
+            },
+            "leaderLength": 20,
+            "prefix": "20X ",
+            "textPosition": {
+              "x": -12,
+              "y": 122
+            }
+          }
+        ]
+      },
+      "result": {
+        "success": true,
+        "batchId": "73e5da7c8db443c9b40515fb07980636",
+        "handles": {
+          "width": "355",
+          "height": "364",
+          "step-x-1": "371",
+          "step-x-2": "37E",
+          "step-x-3": "38B",
+          "step-x-4": "398",
+          "step-x-5": "3A5",
+          "step-y-1": "3B2",
+          "step-y-2": "3BF",
+          "step-y-3": "3CC",
+          "step-y-4": "3D9",
+          "step-y-5": "3E6",
+          "mount-offset-x": "3F3",
+          "mount-spacing-x": "400",
+          "mount-offset-y": "40D",
+          "mount-spacing-y": "41A",
+          "slot-position-x": "427",
+          "slot-position-y": "434",
+          "slot-length": "441",
+          "slot-width": "44E",
+          "bore-diameter": "45B",
+          "pitch-diameter": "464",
+          "bolt-diameter": "470",
+          "mount-diameter": "47C",
+          "corner-radius": "488"
+        },
+        "warnings": [],
+        "elapsedMilliseconds": 34
+      }
+    }
+  ],
+  "conflictingRequest": {
+    "content": [
+      {
+        "type": "text",
+        "text": "An error occurred invoking 'cad_draw_2d': REQUEST_ID_CONFLICT: This requestId belongs to a different plan; use a new GUID for a new intent."
+      }
+    ],
+    "isError": true
+  },
+  "overwriteRejected": {
+    "content": [
+      {
+        "type": "text",
+        "text": "An error occurred invoking 'cad_save_drawing': OUTPUT_EXISTS: Choose a new path; the output already exists."
+      }
+    ],
+    "isError": true
+  },
+  "layerRollback": {
+    "content": [
+      {
+        "type": "text",
+        "text": "An error occurred invoking 'cad_draw_2d': LAYER_CONFLICT: Layer HOLE exists with different settings; preserve it or choose a new name."
+      }
+    ],
+    "isError": true
+  }
+}

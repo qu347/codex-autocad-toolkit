@@ -4,7 +4,7 @@
   AutodeskProduct="AutoCAD"
   Name="AI-CAD Mechanical Foundation"
   Description="Codex-controlled mechanical drawing tools for AutoCAD 2026"
-  AppVersion="1.0.0"
+  AppVersion="1.1.0"
   ProductCode="{9A78F846-5D91-4D9B-915A-02C695C11DC8}"
   UpgradeCode="{3FE61A15-85DF-4CD0-BE59-037AA17F81F1}">
   <CompanyDetails Name="AI-CAD" />

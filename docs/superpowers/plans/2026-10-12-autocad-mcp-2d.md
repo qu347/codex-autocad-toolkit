@@ -75,5 +75,5 @@ assert all(entity.dxftype() == "DIMENSION" for entity in actual_dimensions)
 
 - [x] 重新打开 DWG，再读 MCP 证据；DXF 数值校核并渲染 PNG，查看预览。缺陷需要先复现，再修正和复测。
 - [x] 编写连接、阶段绘图和复核 Skills，运行 `skill-creator/scripts/quick_validate.py`。安装配置仅替换本工具包条目并备份原配置，不泄露凭据或会话令牌。
-- [ ] 完整构建与测试、包检查、实际 MCP 测试；按显式文件清单打包源码、可执行 Bridge、插件和 Skills，不加入 SDK/.git/bin/obj/无关内容。
-- [ ] 对照 Spec 检查全部交付项；提交验证记录和交付文件。留在开发分支，不自动推送或合并。
+- [x] 完整构建与测试、包检查、实际 MCP 测试；按显式文件清单打包源码、可执行 Bridge、插件和 Skills，不加入 SDK/.git/bin/obj/无关内容。
+- [x] 对照 Spec 检查全部交付项；提交验证记录和交付文件。留在开发分支，不自动推送或合并。

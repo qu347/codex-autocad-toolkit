@@ -44,3 +44,5 @@ Windows，AutoCAD 2026核心引擎R25.1（W.60.0.0），.NET SDK8.0.425，Releas
 原生尺寸依赖定义点，未实现对轮廓句柄的关联更新；图形修改后重新复核尺寸。当前MCP不含截图和缩放接口。测试加载仅临时添加本地插件目录到TRUSTEDPATHS，随后恢复，没有关闭SECURELOAD。
 
 更新插件、配置与Skills已保留备份；本会话旧MCP进程不会自动重新加载新工具目录，需要刷新MCP或新开Codex会话后使用。
+
+发布ZIP已逐文件SHA-256核验；解压后使用Windows PowerShell运行编译包安装与Skills安装/备份，得到EXTRACTED_PACKAGE_INSTALL_VALID。源码留在feat/autocad-mcp-2d分支。

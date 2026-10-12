@@ -6,7 +6,7 @@ Windows x64、已安装并能正常打开的 AutoCAD 2026（R25.1）、.NET 8 x6
 
 ## 2. 安装 MCP 和 Skills
 
-完整解压教学安装包，在工具包根目录的 PowerShell 运行：
+下载 [1.1.0 Windows x64 安装包](../releases/codex-autocad-mcp-2d-1.1.0-win-x64.zip) 并完整解压，在解压后的工具包根目录打开 PowerShell 运行：
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\plugin\scripts\install-package.ps1
@@ -65,3 +65,11 @@ python .\examples\mcp-stepped-flange\verify-dxf.py .\examples\mcp-stepped-flange
 ```
 
 早期独立 LSP 路线仍在 `examples/stepped-flange/`：新图 APPLOAD 加载 flange_demo.lsp，再依次运行 CADOUTLINE/CADHOLES/CADDIMS。
+
+## 6. 已有 AutoLISP 自动绘图路线
+
+需要 Windows AutoCAD。默认案例已在 AutoCAD 2026 验证。在 Codex 打开仓库，明确选择 AutoLISP 路线，再提交 [自动绘图课程](autolisp-auto-drawing.md) 中的完整绘图提示词。由 Codex 确认实际环境、检查尺寸、创建 `practice/flange_demo.lsp`，然后在 AutoCAD 新空白图纸中自动执行轮廓、孔槽与尺寸三个阶段。你不需要手动 APPLOAD 或输入阶段命令。
+
+每个阶段自动 REGEN、ZOOM，停留3秒并导出原生预览。校核后保存新 DWG、DXF，并用 AutoCAD 原生引擎重开检查。出现尺寸冲突或阶段失败时停止，不改变指定尺寸、不覆盖原图。参考图在 `examples/stepped-flange/`，实际结果见 `practice/`。
+
+此路线使用 AutoCAD 原生 AutoLISP 和 `/b` 脚本入口，不依赖 MCP 插件或 .NET SDK。`skills/codex-autocad-toolkit/scripts/run-visible-lisp.py` 需要 Python 3、ezdxf、Pillow；执行前检查实际 acad.exe、acadiso.dwt 路径。该执行器只负责法兰的三个阶段，其他形状需要按尺寸另写脚本和校核。只有明确选择手动教学时，才使用 APPLOAD 与阶段命令。

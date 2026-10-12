@@ -1,5 +1,6 @@
 请读取本仓库的 AGENTS.md、README.md、skills/codex-autocad-toolkit/SKILL.md 和 docs/getting-started.md。
 先检查我的 Windows、AutoCAD 版本、安装路径及当前可用的 MCP 工具，报告实际检查结果。
-演示Codex调用CAD时，使用 skills/autocad-mcp-drawing 与 skills/autocad-mcp-review，按 examples/mcp-stepped-flange 的提示词，在新公制图纸中通过结构化二维MCP分阶段绘制并复核。
+使用 skills/autocad-mcp-drawing 与 skills/autocad-mcp-review，按 examples/mcp-stepped-flange 的提示词，在新公制图纸中通过结构化二维MCP分阶段绘制并复核。
 按 docs/getting-started.md 安装编译包或构建源码，刷新 Bridge，并实际验证 cad_health 与 cad_get_context。
+如果我明确选择 AutoLISP 路线，则参考 examples/stepped-flange/flange_demo.lsp，在 practice/ 创建本次脚本和 ready.txt。通过原生入口自动分阶段绘制、缩放、导出预览、保存新 DWG/DXF并重开校核，不使用 Computer Use，不让我手动 APPLOAD 或输入阶段命令。保留参考资料，尺寸冲突先指出，不自行改变要求。
 不要覆盖我已有的全局配置或图纸；提供需要合并的配置项及具体文件位置。

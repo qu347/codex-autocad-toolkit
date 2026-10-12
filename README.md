@@ -6,12 +6,12 @@
 
 ## 直接开始
 
-1. 解压包含编译文件的教学安装包，运行 `plugin/scripts/install-package.ps1` 和 `install-skills.ps1`。
+1. 下载并完整解压 [1.1.0 Windows x64 安装包](releases/codex-autocad-mcp-2d-1.1.0-win-x64.zip)，运行 `plugin/scripts/install-package.ps1` 和 `install-skills.ps1`。
 2. 启动 AutoCAD 2026，新建公制空白图纸，执行 AICADSTATUS。
 3. 在 Codex 添加/刷新 `ai_cad` STDIO 服务，调用 health/context 确认连接。
-4. 使用 [三阶段演示提示词](examples/mcp-stepped-flange/prompts.txt) 绘图，并按 [教学脚本](docs/teaching-demo.md) 录屏。
+4. 使用 [三阶段绘图提示词](examples/mcp-stepped-flange/prompts.txt) 完成轮廓、孔槽和尺寸，读取实际结果后保存新 DWG/DXF。
 
-详细步骤见 [安装与连接](docs/getting-started.md)。Git 仓库源码不包含发布二进制；从源码使用需先运行 `build.ps1` 或 `install-user.ps1`。
+详细步骤见 [安装与连接](docs/getting-started.md)。安装包及 SHA-256 校验值位于 `releases/`；从源码构建需先运行 `build.ps1` 或 `install-user.ps1`。
 
 ## MCP 与 Skills
 
@@ -25,6 +25,12 @@
 
 共17个工具，保留原有四孔底板三维/三视图、提议修改、撤销及分页读取。通用二维接口支持 [2d-1.0 字段契约](skills/autocad-mcp-drawing/references/plan-schema.md)，不开放任意代码执行。重复请求返回原句柄，保存不覆盖现有文件。
 
+## 已有 AutoLISP 自动绘图路线
+
+此路线由 Codex 根据完整尺寸创建 AutoLISP，在 AutoCAD 新图纸中自动分阶段绘制、缩放、导出预览、保存和重开校核，不安装 MCP 插件或 .NET SDK。下载仓库源码，在 Codex 打开文件夹后，明确选择 AutoLISP 路线并提交尺寸要求；无需手动 APPLOAD 或输入阶段命令。
+
+既有说明见 [AutoLISP 自动绘图课程](docs/autolisp-auto-drawing.md) 或 [Word 课程稿](docs/autolisp-auto-drawing.docx)。已生成的 [DWG](practice/flange_auto.dwg)、[DXF](practice/flange_auto.dxf)、[阶段预览](practice/README.md) 和 [校核记录](practice/verification.json) 位于 `practice/`，原参考资料保留在 `examples/`。
+
 ## 文件
 
 | 目录 | 用途 |
@@ -36,6 +42,8 @@
 | skills/codex-autocad-toolkit/ | 仓库入口指引 |
 | prompts/ | 首次开工提示词 |
 | docs/ | 接入和验证说明 |
+| practice/ | 已有 AutoLISP 自动绘图结果、练习和检查记录 |
+| releases/ | 1.1.0 编译安装包与 SHA-256 校验值 |
 
 ## 环境与验证
 
